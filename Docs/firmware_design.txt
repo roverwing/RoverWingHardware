@@ -1,0 +1,75 @@
+Design oveview:
+1. Peripherals
+  1a. Clock: use GCLK4; frequency =48Mhz; divider=3, so effective frequency=16Mhz, 1 clock tick=1/16 us
+  1b. Motors PWM: use TCC0; clock source=GLCK4, prescaler=1, PER=500, so period=501us, freq=16Mhz/501 = about 32 kHz 
+      Duty cycle (CC register): 0-500
+   1c. Servo PWM: use TCC1, TCC2; clock source=GLCK4, prescaler=16, so 1 clock tick=1us; PER=19 999, so period=20 000 us=20ms; 
+      freq=50hz. Pulse width (CC register)  500...2500 (us)
+   1d. Sonar timer: use TC 3 in Match Frequency Generation (MFRQ) mode; 
+       clock source=GLCK4, prescaler=16, so 1 tick=1us; set CC=23, so period=24 us
+       overflow should trigger ISR that check Sonar values. 
+   1e. Encoders: use interrupts on all  edges of A and B channels, so 4 ticks per period
+ 
+ 2. Register  A map
+   These are registers that can be written to by the master
+   All multibyte values are encoded using little endian convention: least significant byte first
+   For each register, there is also a poitner to the memory location of the register, giving an alternative way of accessing it. 
+   E.g., we can access encoder reset bitmask as REGA[14] or as *REG_ENCODER_RESET  
+   Note that each pointer has a correpsonding type
+
+   pointer           |Byte offset | Value                         |  type
+   -------------------------------------------------------------------------------------
+   REG_ANALOG_CONFIG |  0     | Analog enabled bitmask            |  byte
+                     |  1     | Not used                          |
+   -------------------------------------------------------------------------------------
+   REG_SERVO1        |  2 - 3 | Servo1 pulsewidth, in us          |  uint16
+   REG_SERVO2        |  4 -5  | Servo2 pulsewidth, in us          | 
+   REG_SERVO3        |  6 -7  | Servo3 pulsewidth, in us          |  
+   REG_SERVO4        |  8 - 9 | Servo4 pulsewidth, in us          | 
+   -------------------------------------------------------------------------------------                     
+   REG_MOTOR_CONFIG  |  10    | Motors configuration              | byte
+                     |  11    |                                   | byte
+                     |  12    |                                   | byte
+                     |  13    |                                   | byte
+   -------------------------------------------------------------------------------------                     
+   REG_ENCODER_RESET |  14    | Encoder reset bitmask             |  byte
+                     |  15    | Not used 
+   -------------------------------------------------------------------------------------                     
+   REG_MOTOR1_SPEED  | 16-17  | Motor1 speed,  range -500...500   | int16  
+   REG_MOTOR2_SPEED  | 18-19  | Motor2 speed,  range -500...500   | int16  
+   -------------------------------------------------------------------------------------                     
+   REG_SONARS_BITMASK|  20    | Sonar enabled bitmask             | sonar_enabled_mask 
+                     |  21    | not used                          |  
+   REG_SONARS_TIMEOUT|  22-23 | Sonar timeout, in us              | uint16
+   -------------------------------------------------------------------------------------
+ 3. Register map2
+   These are registers that can be read by the master
+   All multibyte values are encoded using little endian convention: least significant byte first
+   Defined name      | Offset | Value
+   -------------------------------------------------------------------------------------
+   REG_VERSION       | 0 - 7  | Firmware version (8 chars)  
+   -------------------------------------------------------------------------------------
+   REG_ENC1          | 8 - 9  | Encoder 1 value (in ticks, int32)
+   REG_ENC2          | 10- 11 | Encoder 2 value (in ticks, int32)
+   -------------------------------------------------------------------------------------
+   REG_SONAR1        | 12-13  | Sonar1 echo time (in us, uint16). To get distance in mm, multiply by 0.172
+   REG_SONAR2        | 14-15  | Sonar2 echo time
+   REG_SONAR3        | 16-17  | Sonar3 echo time
+ 
+ 4. Private variables:
+   In addition to listed in the tabel above:
+
+
+
+
+--------------
+Useful code snippets:
+- fast reading of io pins: 
+if (REG_PORT_IN0 & PORT_PA14) {...}  // PA14=ENC1A
+reference: https://forum.arduino.cc/index.php?topic=334073.msg2452270#msg2452270 
+- configuring timers/pwm:
+https://forum.arduino.cc/index.php?topic=346731.15
+
+
+  
+   
