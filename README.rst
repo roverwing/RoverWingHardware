@@ -1,6 +1,6 @@
-# RoverWingHardware
+
 *********
-RoverWing
+RoverWing: Hardware
 *********
 
 
@@ -12,9 +12,9 @@ and other peripherals commonly used by mobile robots. It also contains a microco
 to control these peripherals, which communicates with the Feather board using I2C protocol, thus freeing resources 
 of the Feather board for other purposes. 
 
-The RoverWing was heavily influenced by Adafruit's `CRICKIT <https://www.adafruit.com/crickit>`_   board (in particular, it has exact same dimensions and 
-mounting holes as the CRICKIT board). However, unlike CRICKIT, it is intended for use with more powerful 12V motors 
-and provides a slightly different set of peripherals. 
+The RoverWing was heavily influenced by Adafruit's `CRICKIT <https://www.adafruit.com/crickit>`_   board 
+(in particular, it has exact same dimensions and  mounting holes as the CRICKIT board). However, unlike CRICKIT, 
+it is intended for use with more powerful 6-12V motors and provides a slightly different set of peripherals. 
 
 Below is the list of key features of the RoverWing:
 
@@ -41,17 +41,16 @@ Below is the list of key features of the RoverWing:
 The RoverWing uses same connectors for power supply, motors, encoders, and I2C sensors as the `REV Robotics Expansion hub <http://www.revrobotics.com/rev-31-1153/>`_ 
 used in `First Tech Challenge <https://www.firstinspires.org/robotics/ftc>`_  robotics competition, so it can be easily used with the same motors and sensors. 
   
-Hardware
-========
+The sections below discuss these feateures in detail 
 
 Below is the description of the RoverBoard hardware. 
 
 Power
------
+=====
 
 The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO battery or  a 10-cell NiMH battery. 
 The battery port uses JST VH male connector. We recommend using 18 AWG or larger cables for power supply;  see section `Cables`_ for list of 
-compatible cables and adapters. There is also a power indicator LED next to the power connector. 
+compatible cables and adapters. There is also a power indicator LED next to the power connector. Note that the RoverWing **can not be powered via USB cable**. 
 
 .. Warning::
    The VH connectors are polarized, so they can only be plugged in one way. Because of this, there  is no reverse  polarity protection 
@@ -59,27 +58,43 @@ compatible cables and adapters. There is also a power indicator LED next to the 
    you will permanently damage the board!!
    
 
-The board has a 5V high-efficiency  buck voltage converter, which provides power to a plugged in Feather board via the USB bus pin of the Feather board. 
-It also provides power to sonars, Neopixel LEDs, servos, and a 3.3V line regulator, which powers the built-in microcontroller and IMU. 
+The board has a 5V high-efficiency  buck voltage converter  which powers 
+the  sonars, Neopixel LEDs, servos, and a 3.3V linear regulator. The linear regulator in turn   provides power 
+to  the Feather board (via 3.3V pin),  built-in microcontroller, and IMU. 
 
+Note that 5V converter is capable of producing 4A output. Some of it is used by on-board electronics, leaving about 
+3A  available for Neopixels and servos. 
 
+Feather board connector
+=======================
+RoverWing can not be used without a Fetaher board. To connect the Feather board, plug it in 
+the dual row female headers at teh center of RoverWing. These headers provide connection between the 
+RoverWign and the Feather, using power pins (ground and 3.3V), I2C pins (SDA and SCL) and reset pin, 
+so that pressing the reset button on either the RoverWing or the Feather resets both of them. RoverWing 
+contains the necessary pull-up resistors (2.7K) for the I2C bus.
 
-Note that 5V converter is capable of producing 2.5A output. Some of it is used by on-board electronics, leaving about 2A  available for Neopixels and servos. 
+The second row of the female header gives an easy way of connecting additional electronics to the Feather. 
+Each pin of the second row is connected to the adjacent pin of the Feather, except the two pins noted below:
 
+* USB bus pin of the Feather is not connected. Instead, the adjacent pin in the second row is connected to the output of 5V voltage converter of the RoverWing, which can be used to provide 5V power to additional electronics. 
+
+* VBAT pin of the Feather is not connected. Instead, the adjacent pin of the second row is connected to the NEOPIXEL_OUT signal of the RoverWing (see section on Neopixels below). 
 
 Microcontroller
----------------
+===============
 The brains of the board is the SAMD21G microcontroller - same MCU used by Arduino ZERO and Adafruit Feather M0 boards. 
 It comes preloaded with firmware, which is described in Firmware section below. Normally there is no need to change it. 
 
 
-The MCU communicates with the Feather board via I2C bus. 
+The MCU communicates with the Feather board via I2C bus; it uses the slave address of 0x11 (or 17 in decimal form).  
 
 Inertial Motion Unit
---------------------
-RoverWing contains a  Inertial Motion Unit, based on MPU6050 chip by Invensense. This is a 6 degree of freedom sensor (3 axis gyro 
-and 3 axis accelerometer), which can be used for  determining robot orientation in space. Provided firmware contains appropriate data 
-fusion algorithm, combining the sensor data and filtering out noise to return the robot orientation.
+====================
+
+RoverWing contains a  Inertial Motion Unit, based on MPU6050 chip by Invensense. This is a 6 degree 
+of freedom sensor (3 axis gyro and 3 axis accelerometer), which can be used for  determining robot 
+orientation in space. Provided firmware contains appropriate data fusion algorithm, combining the sensor 
+data and filtering out noise to return the robot orientation, either as roll-pithc-yaw angles, or in a quaternon form. 
 
 .. Note::
    Even with noise filtering, data obtained from this sensor alone will always suffer from accumulating error (drift); 
@@ -88,43 +103,52 @@ fusion algorithm, combining the sensor data and filtering out noise to return th
 
 
 Motors and encoders
--------------------
-The RoverWing provides connections for two brushed DC motors, at the same voltage as the main power supply (7-14V). Each motor is 
-controlled by DRV8871 motor driver by Texas Instruments, which can provide up to 2.9A per motor. The drivers are current limited, 
-so the current will not exceed 2.9A even if the motor is stalled, which helps prevent motor burnout. The motor ports use JST VH connectors; 
-see section `Cables`_ for list of compatible cables and adapters.
+===================
 
-To avoid overheating, it is recommended to attach  additional heatsinks to the motor drivers if you intend to run the motors at 
-more than 2A continuous. 
+The RoverWing provides connections for two brushed DC motors, at the same voltage as the main power supply 
+(7-14V). You can also use motors rated for lower voltage and limit the power in software: for example, 
+you can use 6V motors with 7.4V power supply by limiting the maximal output power to 80\%. 
+Each motor is controlled by DRV8871 motor driver by Texas Instruments, which can provide up to 2.9A p
+er motor. The drivers are current limited, so the current will not exceed 2.9A even if the motor is stalled, 
+which helps prevent motor burnout. The motor ports use JST VH connectors; see section `Cables`_ for list of 
+compatible cables and adapters.
+
+To avoid overheating, it is recommended to attach  additional heatsinks to the motor drivers if you intend 
+to run the motors at more than 2A continuous. 
 
 
 In addition, the RoverWing provides two ports for connecting quadrature encoders, one for each motor. The encoder ports use 
 `JST PH4 <http://www.jst-mfg.com/product/detail_e.php?series=199>`_ connectors, 
 and pinouts are shown below. These are the same connectors and pinouts as used by REV Robotics hubs, so one can use the same encoder cables. 
 
+Encoder pin order:
+* Ground (pin closest to board edge)
+* 3.3V 
+* Channel A
+* Channel B 
 
 
 
 Servos
-------
+======
 RoverWing provides four servo connections. They can be used for any servo which are controlled by standard PWM signal (500 us - 2500 us pulse duration) and 5V power. 
 
 .. Note::
-   That the total current available for servos and Neopixel LEDs is about 2A. This is sufficient 
-   for micro scale servos, but might not be enough for standard size or larger  servos used under 
+   That the total current available for servos and Neopixel LEDs is about 3A. This is sufficient 
+   for most applications, but might not be enough for standard size or larger  servos used under 
    heavy load.  For example, for a popular `HS485HB <https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product>`_ 
-   standard size servo, no-load current draw is 0.3A, but the stall draw  can be as high as 1.2A. 
+   standard size servo, no-load current draw is 0.3A, but the stall draw  can be as high as 1.2A. Note also that digital servos usually are much more power-hungry than analog servos. 
 
 
 
 
 
 Sonars
-------
+======
 RoverWing provides connections for three ultrasonic distance sensors (HC-SR04 or compatible). 
 These sonar sensors are very popular with hobby robot builders due to their low price  (about $2.50/piece)  
 and reliability. Note that these sonars use 5V power, so they can not be directly connected to 3.3V boards 
-such as Adafruit Feather boards. RoverWing solves this problem by  including voltage level shifter  chip (TX1004EWR). 
+such as Adafruit Feather boards. RoverWing solves this problem by  including a voltage level shifter  chip (TX1004EWR). 
 
 The sonars ports use JST PH4 connectors; see `Cables`_ for advice on choosing connector cables. 
 
