@@ -37,13 +37,17 @@ Below is the list of key features of the RoverWing:
   - GPS and magnetometer (compass) sensors
   - two additional I2C sensors
 
-The RoverWing uses same connectors for power supply, motors, encoders, and I2C sensors as the `REV Robotics Expansion hub <http://www.revrobotics.com/rev-31-1153/>`_
-used in `First Tech Challenge <https://www.firstinspires.org/robotics/ftc>`_  robotics competition, so it can be easily used with the same motors and sensors.
+The RoverWing uses same connectors for power supply, motors, encoders, and I2C
+sensors as the `REV Robotics Expansion hub
+<http://www.revrobotics.com/rev-31-1153/>`_ used in `First Tech Challenge
+<https://www.firstinspires.org/robotics/ftc>`_  robotics competition, so it can
+be easily used with the same motors and sensors.
 
 The sections below discuss these features in detail.
 
-.. figure:: https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/TopView.jpg
-   :width: 200 px
+.. figure:: https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/MainView.jpg
+   :figwidth: 70%
+   :width:  50%
    :align: center
 
    RoverWing (without the Feather), top view.
@@ -147,21 +151,24 @@ motor drivers if you intend to run the motors at more than 2A continuous.
 In addition, the RoverWing provides two ports for connecting quadrature
 encoders, one for each motor. The encoder ports use
 `JST PH4 <http://www.jst-mfg.com/product/detail_e.php?series=199>`_ connectors,
-and pinouts are shown below. These are the same connectors and pinouts as used
-by REV Robotics hubs, so one can use the same encoder cables.
+and pin order is  shown below:
 
-Encoder pin order:
 * Ground (pin closest to board edge)
 * 3.3V
 * Channel B
 * Channel A
+
+These are the same connectors and pinouts as used
+by REV Robotics hubs, so one can use the same encoder cables. For other
+suggested cables, see Cables_ section.
 
 
 
 Servos
 ======
 RoverWing provides four servo connections. They can be used for any servo which
-are controlled by standard PWM signal (500 us - 2500 us pulse duration) and 5V power.
+are controlled by standard PWM signal (500 us - 2500 us pulse duration) and
+5V power.
 
 .. Note::
    That the total current available for servos and NeoPixel LEDs is about 4A.
@@ -187,6 +194,7 @@ level shifter  chip (TX1004EWR).
 
 The sonars ports use JST PH4 connectors; see Cables_ for advice on choosing
 connector cables. The pin order is as follows:
+
 * GND (closest to board edge)
 * 5V
 * Trig
@@ -199,22 +207,31 @@ RoverWing provides connectors for 6 analog sensors, together with 3.3V power and
 ground connectors. Note that the analog signal should not exceed 3.3V, otherwise
 you might damage the board!
 
+To filter out the noise, RoverWing firmware uses so-called  `low pass filter
+<https://en.wikipedia.org/wiki/Exponential_smoothing>`_; slightly simplifying,
+one can say that it averages  several last readings
+of each sensor. Raw values can also be accessed, for those
+(uncommon) situations when it becomes necessary.
 
-
-
-Neopixel
+.. _NeoPixel:
+NeoPixel
 ========
 RoverWing  provides a port for connecting
 `NeoPixel smart LEDs <https://learn.adafruit.com/adafruit-neopixel-uberguide>`_.
 This port uses JST PH3 connector, with the same pin order as used by Adafruit's
 Hallowing board:
+
 * GND (closest to board edge)
 * 5V
 * Data
 
+In addition, RoverWing contains an internal small NeoPixel LED. Normally it
+blinks green (about 4 times/s); if the battery voltage drops below preset limit,
+it turns yellow to warn the user. The battery level cutoff can be changed as
+described in the  documentation of RoverWing library. Other than that, the
+internal NeopIxel LED can not be controlled by the user.
 
-
-
+.. _GPS:
 GPS and compass
 ===============
 RoverWing provides connectors for external GPS and magnetometer (compass)
@@ -242,10 +259,12 @@ Additional I2C ports
 RoverWing has two ports for connecting additional I2C sensors. These ports are
 connected to the I2C bus of the Feather board and thus are controlled directly
 by the Feather. The ports use JST PH4 connectors, with the following pin order:
+
 * GND (closest to board edge)
 * 3.3V
 * SDA
 * SCL
+
 This is the same connector and same  pin order as used by REV Robotics hub and
 by Adafruit's STEMMA cables <https://www.adafruit.com/product/3950>. You can
 aslo use SEEED Studio Grove cables; see Cables_ section for details.
@@ -284,7 +303,7 @@ for a solid electrical connection.
 This is the same connector and same pin order as used by Adafruit Hallowing. You
 can plug in a Neopixel strip such as this one from Adafruit directly:
 https://www.adafruit.com/product/3919 or you can use the JST ph3 to female
-socket adapter cable such as `this one <https://www.adafruit.com/product/3894>`__. 
+socket adapter cable such as `this one <https://www.adafruit.com/product/3894>`__.
 
 
 
