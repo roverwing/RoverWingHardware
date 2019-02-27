@@ -42,12 +42,12 @@ used in `First Tech Challenge <https://www.firstinspires.org/robotics/ftc>`_  ro
 
 The sections below discuss these features in detail.
 
-.. figure:: TopView.JPG
+.. figure:: https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/TopView.jpg
    :width: 200 px
    :align: center
 
    RoverWing (without the Feather), top view.
-   
+
 Power
 =====
 
