@@ -241,10 +241,6 @@ github.com/roverwing</text>
 <text x="20.701" y="22.352" size="0.889" layer="25" font="vector" ratio="11" rot="SR45">GND</text>
 <text x="22.733" y="21.336" size="0.889" layer="25" font="vector" ratio="11" rot="SR45">5V</text>
 <text x="23.114" y="19.177" size="0.889" layer="25" font="vector" ratio="11" rot="SR45">DATA</text>
-<wire x1="16.008" y1="10" x2="28.508" y2="10" width="0.1" layer="20"/>
-<wire x1="16.008" y1="10" x2="16.008" y2="-10" width="0.1" layer="20"/>
-<wire x1="16.008" y1="-10" x2="28.508" y2="-10" width="0.1" layer="20"/>
-<wire x1="28.508" y1="-10" x2="28.508" y2="10" width="0.1" layer="20"/>
 <wire x1="-13.97" y1="20.32" x2="-6.35" y2="20.32" width="0.1524" layer="21"/>
 <wire x1="-6.35" y1="20.32" x2="-6.35" y2="17.78" width="0.1524" layer="21"/>
 <wire x1="-6.35" y1="17.78" x2="-6.35" y2="15.24" width="0.1524" layer="21"/>
@@ -436,7 +432,6 @@ github.com/roverwing</text>
 <wire x1="8.89" y1="-17.78" x2="8.89" y2="-20.32" width="0.1524" layer="21"/>
 <wire x1="8.89" y1="-20.32" x2="13.97" y2="-20.32" width="0.1524" layer="21"/>
 <wire x1="13.97" y1="-20.32" x2="13.97" y2="-17.78" width="0.1524" layer="21"/>
-<text x="23.5" y="-6.5" size="1.778" layer="20" rot="R90">CUT HERE</text>
 <text x="14.62040625" y="-16.949984375" size="0.889" layer="25" font="vector" ratio="11" rot="SR0">3.3V</text>
 <text x="-9.50959375" y="-14.409984375" size="0.889" layer="26" font="vector" ratio="11" rot="SMR0">GND</text>
 <text x="14.36640625" y="-11.869984375" size="0.889" layer="25" font="vector" ratio="11" rot="SR0">GND</text>

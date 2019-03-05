@@ -4698,8 +4698,8 @@ MPN: ATSAMD21G18A-AU</description>
 <part name="R6" library="RoverWing" deviceset="RES-SMD-0805" device="" value="22k"/>
 <part name="GND14" library="RoverWing" deviceset="GND" device=""/>
 <part name="C1" library="RoverWing" deviceset="CAP-POL-SMD-8X10.5" device="" value="220uF"/>
-<part name="R109" library="RoverWing" deviceset="RES-SMD-0805" device="" value="1k"/>
-<part name="R11" library="RoverWing" deviceset="RES_ARRAY-2.7KX4" device="0603X4" value="2.7k*4"/>
+<part name="R11" library="RoverWing" deviceset="RES-SMD-0805" device="" value="1k"/>
+<part name="R12" library="RoverWing" deviceset="RES_ARRAY-2.7KX4" device="0603X4" value="2.7k*4"/>
 <part name="U$11" library="RoverWing" deviceset="FIDUCIAL" device=""/>
 <part name="U$13" library="RoverWing" deviceset="FIDUCIAL" device=""/>
 <part name="U$17" library="RoverWing" deviceset="FIDUCIAL" device=""/>
@@ -4871,11 +4871,11 @@ MPN: ATSAMD21G18A-AU</description>
 <attribute name="NAME" x="120.396" y="137.795" size="1.524" layer="95" ratio="10"/>
 <attribute name="VALUE" x="117.856" y="132.969" size="1.524" layer="96" ratio="10"/>
 </instance>
-<instance part="R109" gate="G$1" x="17.78" y="20.32" smashed="yes" rot="R90">
+<instance part="R11" gate="G$1" x="17.78" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="16.51" y="16.51" size="1.524" layer="95" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="20.32" y="16.51" size="1.524" layer="95" font="vector" ratio="10" rot="R90"/>
 </instance>
-<instance part="R11" gate="G$1" x="104.14" y="22.86" smashed="yes">
+<instance part="R12" gate="G$1" x="104.14" y="22.86" smashed="yes">
 <attribute name="NAME" x="114.6556" y="30.7086" size="1.524" layer="95" ratio="10"/>
 <attribute name="VALUE" x="114.0206" y="28.1686" size="1.524" layer="95" ratio="10" rot="SR0"/>
 </instance>
@@ -5172,7 +5172,7 @@ MPN: ATSAMD21G18A-AU</description>
 <net name="3.3V" class="0">
 <segment>
 <wire x1="17.78" y1="15.24" x2="17.78" y2="16.51" width="0.1524" layer="91"/>
-<pinref part="R109" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <label x="16.51" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -5223,16 +5223,16 @@ MPN: ATSAMD21G18A-AU</description>
 <segment>
 <wire x1="106.68" y1="7.62" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
 <label x="106.68" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="12.7" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="17.78" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="22.86" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
 <junction x="106.68" y="22.86"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <junction x="106.68" y="17.78"/>
-<pinref part="R11" gate="G$1" pin="3"/>
+<pinref part="R12" gate="G$1" pin="3"/>
 <junction x="106.68" y="12.7"/>
-<pinref part="R11" gate="G$1" pin="4"/>
+<pinref part="R12" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <label x="236.22" y="172.72" size="1.778" layer="95"/>
@@ -5286,7 +5286,7 @@ MPN: ATSAMD21G18A-AU</description>
 <label x="17.78" y="30.48" size="1.778" layer="95" rot="R270"/>
 <pinref part="TP2" gate="G$1" pin="TP"/>
 <wire x1="17.78" y1="24.13" x2="17.78" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="R109" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PA30"/>
@@ -5391,7 +5391,7 @@ MPN: ATSAMD21G18A-AU</description>
 <segment>
 <wire x1="132.08" y1="22.86" x2="139.7" y2="22.86" width="0.1524" layer="91"/>
 <label x="134.62" y="22.86" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="8"/>
+<pinref part="R12" gate="G$1" pin="8"/>
 </segment>
 <segment>
 <pinref part="J15" gate="G$1" pin="21"/>
@@ -5411,7 +5411,7 @@ MPN: ATSAMD21G18A-AU</description>
 <segment>
 <wire x1="132.08" y1="17.78" x2="139.7" y2="17.78" width="0.1524" layer="91"/>
 <label x="134.62" y="17.78" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="7"/>
+<pinref part="R12" gate="G$1" pin="7"/>
 </segment>
 <segment>
 <pinref part="J15" gate="G$1" pin="23"/>
@@ -5492,7 +5492,7 @@ MPN: ATSAMD21G18A-AU</description>
 <segment>
 <wire x1="132.08" y1="12.7" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
 <label x="134.62" y="12.7" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="6"/>
+<pinref part="R12" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="SCL2" class="0">
@@ -5509,7 +5509,7 @@ MPN: ATSAMD21G18A-AU</description>
 <segment>
 <wire x1="132.08" y1="7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
 <label x="134.62" y="7.62" size="1.778" layer="95"/>
-<pinref part="R11" gate="G$1" pin="5"/>
+<pinref part="R12" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="MOTOR1A" class="0">

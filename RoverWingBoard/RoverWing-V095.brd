@@ -1901,11 +1901,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-32.219" y="7.059" size="0.889" layer="25" font="vector" ratio="11"/>
 <attribute name="VALUE" x="-34.667" y="4.386" size="1.27" layer="27"/>
 </element>
-<element name="R109" library="RoverWing" package="0805" value="1k" x="-4.953" y="-10.16" smashed="yes" rot="R90">
+<element name="R11" library="RoverWing" package="0805" value="1k" x="-4.953" y="-10.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="-5.969" y="-10.795" size="0.889" layer="25" font="vector" ratio="11" rot="R90"/>
 <attribute name="VALUE" x="-6.858" y="-12.319" size="0.635" layer="27" ratio="10"/>
 </element>
-<element name="R11" library="RoverWing" package="0603*4" value="2.7k*4" x="-7.7216" y="24.1808" smashed="yes" rot="R90">
+<element name="R12" library="RoverWing" package="0603*4" value="2.7k*4" x="-7.7216" y="24.1808" smashed="yes" rot="R90">
 <attribute name="NAME" x="-7.6454" y="26.6129" size="0.889" layer="25" font="vector" ratio="11" rot="R180" align="bottom-center"/>
 <attribute name="PARTNO" value="RTA03-4D272JTP " x="-7.7216" y="24.1808" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-5.3867" y="24.1808" size="1.27" layer="27" rot="R90" align="top-center"/>
@@ -2345,11 +2345,11 @@ design rules under a new name.</description>
 <wire x1="-3.996" y1="1.06" x2="-3.81" y2="0.874" width="0.254" layer="1"/>
 <via x="7.62" y="-11.176" extent="1-16" drill="0.35"/>
 <wire x1="5.842" y1="-11.176" x2="7.62" y2="-11.176" width="0.254" layer="1"/>
-<contactref element="R109" pad="1"/>
 <contactref element="R11" pad="1"/>
-<contactref element="R11" pad="2"/>
-<contactref element="R11" pad="3"/>
-<contactref element="R11" pad="4"/>
+<contactref element="R12" pad="1"/>
+<contactref element="R12" pad="2"/>
+<contactref element="R12" pad="3"/>
+<contactref element="R12" pad="4"/>
 <wire x1="-5.842" y1="22.225" x2="-5.842" y2="22.5912" width="0.254" layer="1"/>
 <wire x1="-5.842" y1="22.5912" x2="-6.5216" y2="23.2808" width="0.254" layer="1"/>
 <contactref element="U7" pad="1"/>
@@ -2467,7 +2467,7 @@ design rules under a new name.</description>
 <wire x1="1.651" y1="-3.429" x2="0" y2="-5.08" width="0.254" layer="16"/>
 <contactref element="U1" pad="45"/>
 <via x="-4.572" y="-8.382" extent="1-16" drill="0.3937"/>
-<contactref element="R109" pad="2"/>
+<contactref element="R11" pad="2"/>
 <wire x1="-4.572" y1="-8.382" x2="-4.572" y2="-8.89" width="0.254" layer="1"/>
 <wire x1="-4.953" y1="-9.271" x2="-4.572" y2="-8.89" width="0.254" layer="1"/>
 <wire x1="-4.572" y1="-8.382" x2="-3.302" y2="-8.382" width="0.254" layer="16"/>
@@ -2665,7 +2665,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="26"/>
 <wire x1="-9.329984375" y1="29.877590625" x2="-8.831015625" y2="29.019409375" width="0.254" layer="16"/>
 <wire x1="-10.16" y1="16.51" x2="-12.7" y2="16.51" width="0.254" layer="1"/>
-<contactref element="R11" pad="8"/>
+<contactref element="R12" pad="8"/>
 <wire x1="-3.996" y1="6.06" x2="-4.78113125" y2="6.06" width="0.254" layer="1"/>
 <wire x1="-4.78113125" y1="6.06" x2="-6.35" y2="7.62886875" width="0.254" layer="1"/>
 <wire x1="-8.9216" y1="27.484" x2="-8.9216" y2="25.0808" width="0.254" layer="1"/>
@@ -2687,7 +2687,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="25"/>
 <wire x1="-3.996" y1="12.124" x2="-10.16" y2="18.288" width="0.254" layer="1"/>
 <wire x1="-10.16" y1="19.05" x2="-12.7" y2="19.05" width="0.254" layer="1"/>
-<contactref element="R11" pad="7"/>
+<contactref element="R12" pad="7"/>
 <wire x1="-3.996" y1="12.124" x2="-3.996" y2="6.56" width="0.254" layer="1"/>
 <wire x1="-8.1216" y1="25.0808" x2="-8.1216" y2="30.66920625" width="0.254" layer="1"/>
 <contactref element="J15" pad="23"/>
@@ -2847,7 +2847,7 @@ design rules under a new name.</description>
 <wire x1="1.208" y1="16.953" x2="2.4765" y2="15.6845" width="0.254" layer="1"/>
 <wire x1="3.683" y1="29.5242625" x2="8.753" y2="34.5942625" width="0.254" layer="1"/>
 <wire x1="3.683" y1="29.5242625" x2="3.683" y2="16.891" width="0.254" layer="1"/>
-<contactref element="R11" pad="6"/>
+<contactref element="R12" pad="6"/>
 <wire x1="-0.996" y1="12.212" x2="-0.996" y2="8.06" width="0.254" layer="1"/>
 <wire x1="-7.3216" y1="25.0808" x2="-7.3216" y2="35.4774" width="0.254" layer="1"/>
 <wire x1="-7.3216" y1="35.4774" x2="-7.112" y2="35.687" width="0.254" layer="1"/>
@@ -2872,7 +2872,7 @@ design rules under a new name.</description>
 <wire x1="-4.318" y1="26.67" x2="-5.8972" y2="25.0908" width="0.254" layer="1"/>
 <wire x1="-4.318" y1="26.67" x2="-3.175" y2="27.813" width="0.254" layer="1"/>
 <wire x1="-4.318" y1="26.67" x2="-6.985" y2="24.003" width="0.254" layer="16"/>
-<contactref element="R11" pad="5"/>
+<contactref element="R12" pad="5"/>
 <wire x1="-1.496" y1="12.474" x2="-1.496" y2="8.06" width="0.254" layer="1"/>
 <wire x1="-6.5216" y1="25.0808" x2="-5.8972" y2="25.0908" width="0.254" layer="1"/>
 <contactref element="J16" pad="P$2"/>
