@@ -46,11 +46,6 @@ be easily used with the same motors and sensors.
 The sections below discuss these features in detail.
 
 ![alt text](https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/MainView.jpg)
-.. figure:: https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/MainView.jpg
-   :figwidth: 70%
-   :width:  50%
-   :align: center
-
    RoverWing (without the Feather), top view.
 
 Power
