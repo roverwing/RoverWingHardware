@@ -305,7 +305,7 @@ can plug in a Neopixel strip such as this one from Adafruit directly:
 https://www.adafruit.com/product/3919 or you can use the JST ph3 to female
 socket adapter cable such as `this one <https://www.adafruit.com/product/3894>`__.
 
-`Roverwing Home Page< <https://roverwing.readthedocs.io/en/latest/>`_
+`Roverwing Home Page <https://roverwing.readthedocs.io/en/latest/>`_
 
 `Library <https://roverwing.github.io/RoverWingLibrary/>`_
 
