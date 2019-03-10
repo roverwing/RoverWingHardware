@@ -12,7 +12,7 @@ and other peripherals commonly used by mobile robots. It also contains a microco
 to control these peripherals, which communicates with the Feather board using I2C protocol, thus freeing resources
 of the Feather board for other purposes.
 
-The RoverWing was heavily influenced by Adafruit's `CRICKIT <https://www.adafruit.com/crickit>`_   board
+The RoverWing was heavily influenced by Adafruit's [CRICKIT] (https://www.adafruit.com/crickit) board
 (in particular, it has exact same dimensions and  mounting holes as the CRICKIT board). However, unlike CRICKIT,
 it is intended for use with more powerful 6-12V motors and provides a slightly different set of peripherals.
 
@@ -38,9 +38,9 @@ Below is the list of key features of the RoverWing:
   - two additional I2C sensors
 
 The RoverWing uses same connectors for power supply, motors, encoders, and I2C
-sensors as the `REV Robotics Expansion hub
-<http://www.revrobotics.com/rev-31-1153/>`_ used in `First Tech Challenge
-<https://www.firstinspires.org/robotics/ftc>`_  robotics competition, so it can
+sensors as the [REV Robotics Expansion hub]
+(http://www.revrobotics.com/rev-31-1153)  used in [First Tech Challenge]
+(https://www.firstinspires.org/robotics/ftc)  robotics competition, so it can
 be easily used with the same motors and sensors.
 
 The sections below discuss these features in detail.
@@ -146,7 +146,7 @@ motor drivers if you intend to run the motors at more than 2A continuous.
 
 In addition, the RoverWing provides two ports for connecting quadrature
 encoders, one for each motor. The encoder ports use
-`JST PH4 <http://www.jst-mfg.com/product/detail_e.php?series=199>`_ connectors,
+[JST PH4] (http://www.jst-mfg.com/product/detail_e.php?series=199) connectors,
 and pin order is  shown below:
 
 * Ground (pin closest to board edge)
@@ -169,8 +169,8 @@ are controlled by standard PWM signal (500 us - 2500 us pulse duration) and
 .. Note::
    That the total current available for servos and NeoPixel LEDs is about 4A.
    This is sufficient for most applications, but might not be enough for large
-   loads.  For example, for a popular `HS485HB
-   <https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product>`_
+   loads.  For example, for a popular [HS485HB]
+   (https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product)
    standard size servo, no-load current draw is 0.3A, but the stall draw  can be
    as high as 1.2A. Note also that digital servos usually are much more
    power-hungry than analog servos.
@@ -203,8 +203,8 @@ RoverWing provides connectors for 6 analog sensors, together with 3.3V power and
 ground connectors. Note that the analog signal should not exceed 3.3V, otherwise
 you might damage the board!
 
-To filter out the noise, RoverWing firmware uses so-called  `low pass filter
-<https://en.wikipedia.org/wiki/Exponential_smoothing>`_; slightly simplifying,
+To filter out the noise, RoverWing firmware uses so-called  [low pass filter]
+(https://en.wikipedia.org/wiki/Exponential_smoothing); slightly simplifying,
 one can say that it averages  several last readings
 of each sensor. Raw values can also be accessed, for those
 (uncommon) situations when it becomes necessary.
@@ -213,7 +213,7 @@ of each sensor. Raw values can also be accessed, for those
 NeoPixel
 ========
 RoverWing  provides a port for connecting
-`NeoPixel smart LEDs <https://learn.adafruit.com/adafruit-neopixel-uberguide>`_.
+[NeoPixel smart LEDs] (https://learn.adafruit.com/adafruit-neopixel-uberguide).
 This port uses JST PH3 connector, with the same pin order as used by Adafruit's
 Hallowing board:
 
@@ -232,12 +232,12 @@ GPS and compass
 ===============
 RoverWing provides connectors for external GPS and magnetometer (compass)
 sensors. It uses the same connectors (Hirose DF13 6-pin + 4-pin) and pinouts as
-popular `Pixhawk flight controller board
-<http://ardupilot.org/copter/docs/common-pixhawk-overview.html>`_  used in
+popular [Pixhawk flight controller board]
+(http://ardupilot.org/copter/docs/common-pixhawk-overview.html)  used in
 quadcopters. Thus, you can use  any GPS and compass combination sensor which is
 compatible with Pixhawk 2.4. Such sensors can be found on eBay or AliExpress for
-as little as $15 (here is an `example
-<https://www.aliexpress.com/item/Ublox-NEO-M8N-M8N-8N-High-Precision-GPS-Built-in-Compass-w-Stand-Holder-for-APM/32370714787.html>`_).
+as little as $15 (here is an [example]
+(https://www.aliexpress.com/item/Ublox-NEO-M8N-M8N-8N-High-Precision-GPS-Built-in-Compass-w-Stand-Holder-for-APM/32370714787.html)).
 
 The provided firmware takes care of reading the GPS and magnetometer sensors,
 providing an easy to use interface for the user. It can also combine the data
@@ -262,7 +262,7 @@ by the Feather. The ports use JST PH4 connectors, with the following pin order:
 * SCL
 
 This is the same connector and same  pin order as used by REV Robotics hub and
-by Adafruit's STEMMA cables <https://www.adafruit.com/product/3950>. You can
+by [Adafruit's STEMMA cables] (https://www.adafruit.com/product/3950). You can
 aslo use SEEED Studio Grove cables; see Cables_ section for details.
 
 RoverWing contains I2C bus pullup resistors, so no additional pullups are necessary.
