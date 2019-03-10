@@ -309,7 +309,7 @@ socket adapter cable such as `this one <https://www.adafruit.com/product/3894>`_
 
 `Library <https://roverwing.github.io/RoverWingLibrary/>`_
 
-`Firmware<https://roverwing.github.io/RoverWingFirmware/>`_
+`Firmware <https://roverwing.github.io/RoverWingFirmware/>`_
 
 
 License
