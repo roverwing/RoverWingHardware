@@ -159,7 +159,7 @@ motors with 7.4V power supply by limiting the maximal output power to 80\%. Each
 motor is controlled by DRV8871 motor driver by Texas Instruments, which can
 provide up to 2.9A per motor. The drivers are current limited, so the current
 will not exceed 2.9A even if the motor is stalled, which helps prevent motor
-burnout. The motor ports use JST VH connectors; see section Cables_ for list
+burnout. The motor ports use JST VH connectors; see section [Cables](README.md#Cables) for list
 of compatible cables and adapters.
 
 To avoid overheating, it is recommended to attach  additional heatsinks to the
@@ -177,8 +177,8 @@ and pin order is  shown below:
 * Channel A
 
 These are the same connectors and pinouts as used
-by REV Robotics hubs, so one can use the same encoder cables. For other
-suggested cables, see Cables_ section.
+by [REV Robotics hubs](http://www.revrobotics.com/rev-31-1153/), so one can use the same encoder cables. 
+For other suggested cables, see [Cables](README.md#Cables) section.
 
 
 
@@ -263,7 +263,7 @@ providing an easy to use interface for the user. It can also combine the data
 from the IMU and magnetometer to provide a more reliable orientation data.
 
 
-** Note**
+**Note**
 >   To avoid interference, it is recommended to place the magnetometer at least 15 cm (6 in) away from
 >   the  motors and other electronics.
 >   A GPS+compass sensor with a stand intended for quadcopters should work well.
