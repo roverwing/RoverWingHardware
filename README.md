@@ -46,20 +46,20 @@ The sections below discuss these features in detail.
 **Table of contents**
 
 * [Power](README.md#Power)
-* [Feather board connector](README.md#Feather%20board%20connector)
+* [Feather board connector](README.md#Feather-board-connector)
 * [Microcontroller](README.md#Microcontroller)
-* [Inertial Motion Unit](README.md#Inertial%20Motion%20Unit)
-* [Motors and encoders](README.md#Motors%20and%20encoders)
+* [Inertial Motion Unit](README.md#Inertial-Motion-Unit)
+* [Motors and encoders](README.md#Motors-and-encoders)
 * [Servos](README.md#Servos)
 * [Sonars](README.md#Sonars)
-* [Analog inputs](README.md#Analog%20inputs)
+* [Analog inputs](README.md#Analog-inputs)
 * [NeoPixel](README.md#NeoPixel)
-* [GPS and compass](README.md#GPS%20and%20compass)
-* [Additional I2C ports](README.md#Additional%20I2C%20ports)
-* [RoverWing Top](README.md#RoverWing%20Top)
+* [GPS and compass](README.md#GPS-and-compass)
+* [Additional I2C ports](README.md#Additional-I2C-ports)
+* [RoverWing Top](README.md#RoverWing-Top)
 * [Cables](README.md#Cables)
 * [Firmware](README.md#Firmware)
-* [RoverWing Library](README.md#RoverWing%20Library)
+* [RoverWing Library](README.md#RoverWing-Library)
 * [License](README.md#License)
 
  
