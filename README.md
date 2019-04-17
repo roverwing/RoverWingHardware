@@ -52,7 +52,7 @@ We recommend using 18 AWG or larger cables for power supply;  see section
 indicator LED next to the power connector. Note that the RoverWing **can not be
 powered via USB cable**.
 
-.. Warning::
+**Warning**
    The VH connectors are polarized, so they can only be plugged in one way.
    Because of this, there  is no reverse  polarity protection on the board. If
    you are making your own power cables, make sure to use the same polarity
