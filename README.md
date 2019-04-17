@@ -47,17 +47,18 @@ Power
 
 The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO
 battery or  a 10-cell NiMH battery. The battery port uses JST VH male connector.
-We recommend using 18 AWG or larger cables for power supply;  see section
-`Cables`_ for list of compatible cables and adapters. There is also a power
+We recommend using 18 AWG or larger cables for power supply;  see section [Cables](https://github.com/roverwing/RoverWingHardware/blob/master/README.md#Cables)
+for list of compatible cables and adapters. There is also a power
 indicator LED next to the power connector. Note that the RoverWing **can not be
 powered via USB cable**.
 
 **Warning**
-   The VH connectors are polarized, so they can only be plugged in one way.
-   Because of this, there  is no reverse  polarity protection on the board. If
-   you are making your own power cables, make sure to use the same polarity
-   convention as the RoverWing, otherwise you will permanently damage the
-   board!!
+
+>   The VH connectors are polarized, so they can only be plugged in one way.
+>   Because of this, there  is no reverse  polarity protection on the board. If
+>   you are making your own power cables, make sure to use the same polarity
+>   convention as the RoverWing, otherwise you will permanently damage the
+>   board!!
 
 
 The board has a 5V high-efficiency  buck voltage converter  which powers the
@@ -73,7 +74,9 @@ which is then made available to the Feather board using ``getVoltage()`` functio
 
 Feather board connector
 =======================
-RoverWing can not be used without a Feather board. To connect the Feather board,
+RoverWing can not be used without a Feather board. Youc an use any Father board from Adafruit, 
+or any 3rd party board that meets [Adafurit's specifications])(https://learn.adafruit.com/adafruit-feather/feather-specification). 
+To connect the Feather board,
 plug it in the dual row female headers at the center of RoverWing. These headers
 provide connection between the RoverWing and the Feather, using power pins
 (ground and 3.3V), I2C pins (SDA and SCL) and reset pin, so that pressing the
@@ -91,13 +94,13 @@ adjacent pin of the Feather, except the two pins noted below:
 
 * VBAT pin of the Feather is not connected. Instead, the adjacent pin of the
   second row is connected to the NEOPIXEL_OUT signal of the RoverWing
-  (see section on NeoPixels_ below).
+  (see [NeoPixel](https://github.com/roverwing/RoverWingHardware/blob/master/README.md#NeoPixel) section  below).
 
 Microcontroller
 ===============
 The brains of the board is the SAMD21G microcontroller - same MCU used by
 Arduino ZERO and Adafruit Feather M0 boards. It comes preloaded with firmware,
-which is described in Firmware_ section below. Normally there is no need to
+which is described in [Firmware](README.md#Firmware) section below. Normally there is no need to
 change it.
 
 
