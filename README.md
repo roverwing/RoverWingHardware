@@ -42,6 +42,31 @@ The sections below discuss these features in detail.
 ![alt text](https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/MainView.jpg)
    RoverWing (without the Feather), top view.
 
+
+**Table of contents**
+
+* [Power](README.md#Power)
+* [Feather board connector](README.md#Feather board connector)
+* [Microcontroller](README.md#Microcontroller)
+* [Inertial Motion Unit](README.md#InertialMotion Unit)
+* [Motors and encoders](README.md#Motors and encoders)
+* [Servos](README.md#Servos)
+* [Sonars](README.md#Sonars)
+* [Analog inputs](README.md#Analog inputs)
+* [NeoPixel](README.md#NeoPixel)
+* [GPS and compass](README.md#GPS and compass)
+* [Additional I2C ports](README.md#Additional I2C ports)
+* [RoverWing Top](README.md#RoverWing Top)
+* [Cables](README.md#Cables)
+* [Firmware](README.md#Firmware)
+* [RoverWing Library](README.md#RoverWing Library)
+* [License](README.md#License)
+
+ 
+
+
+
+
 Power
 =====
 
@@ -74,7 +99,7 @@ which is then made available to the Feather board using ``getVoltage()`` functio
 
 Feather board connector
 =======================
-RoverWing can not be used without a Feather board. Youc an use any Father board from Adafruit, 
+RoverWing can not be used without a Feather board. You can use any Feather board from Adafruit, 
 or any 3rd party board that meets [Adafurit's specifications](https://learn.adafruit.com/adafruit-feather/feather-specification). 
 To connect the Feather board,
 plug it in the dual row female headers at the center of RoverWing. These headers
@@ -273,6 +298,7 @@ Cables
 Below is the list of suggested cables and places to buy them.
 
 * **Power and motor cables**. RoverWing uses JST VH connectors. You can buy JST VH 2-pin cables from many sources, including
+
   - [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables) (JST VH - JST VH, JST VH to PowerPoles).
   - [ServoCity](https://www.servocity.com/electronics/wiring/adaptors)
   - Amazon, eBay, AliExpress
@@ -282,11 +308,9 @@ the pin order matches the one used by REV Robotics hub, so if you are using REV 
 directly connect the encoders using a JST PH - JST PH cable, which can be bought from [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables).
 For other peripherals, you can use JST PH - female headers cable from Adafruit: https://www.adafruit.com/product/3950
 
-You can also use SEEED Studio Grove connectors. The contacts and spacing are identical, but the the plastic housing
-of Grove cable does not completely fit in the PH4 connector, so the fit will not be perfect - but good enough
-for a solid electrical connection.
+You can also use SEEED Studio [Grove cables](https://www.seeedstudio.com/cables-c-949.html), available from [Arrow](https://www.arrow.com/en/products/110990031/seeed-technology-limited). The contacts and spacing are identical, but the the plastic housing of Grove cable does not completely fit in the PH4 connector, so the fit will not be perfect - but good enough for a solid electrical connection.
 
-* **Neopixel**. Roverwing uses JST PH 3pin connector for the NeoPixel port.
+* **Neopixel**. Roverwing uses JST PH 3-pin connector for the NeoPixel port.
 This is the same connector and same pin order as used by Adafruit Hallowing. You
 can plug in a Neopixel strip such as this one from Adafruit directly:
 https://www.adafruit.com/product/3919 or you can use the JST ph3 to female
