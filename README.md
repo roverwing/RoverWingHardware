@@ -273,9 +273,9 @@ Cables
 Below is the list of suggested cables and places to buy them.
 
 * **Power and motor cables**. RoverWing uses JST VH connectors. You can buy JST VH 2-pin cables from many sources, including
- - [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables) (JST VH - JST VH, JST VH to PowerPoles).
- - [ServoCity](https://www.servocity.com/electronics/wiring/adaptors)
- - Amazon, eBay, AliExpress
+  - [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables) (JST VH - JST VH, JST VH to PowerPoles).
+  - [ServoCity](https://www.servocity.com/electronics/wiring/adaptors)
+  - Amazon, eBay, AliExpress
 
 * **Encoders, Sonars, I2C**. RoverWing uses JST PH 4pin connectors for all of these ports. For the encoders,
 the pin order matches the one used by REV Robotics hub, so if you are using REV Robotics motors, you can
@@ -295,14 +295,20 @@ socket adapter cable such as [this one](https://www.adafruit.com/product/3894).
 
 Firmware
 ========
-RoverWing comes preloaded with firmware. If you want to learn more about the firmware, install an update, or compile your own firmware from, please visit [RoverWing Firmware](https://roverwing.github.io/RoverWingFirmware/) github repository.
+RoverWing comes preloaded with firmware. If you want to learn more about the firmware, install an update, or compile your own firmware from source, please visit [RoverWing Firmware](https://roverwing.github.io/RoverWingFirmware/) github repository.
 
 RoverWing Library
 =================
-We have created a library for use with RoverWing, which can be downloaded from https://roverwing.github.io/RoverWingLibrary. Complete suer documentation for thsi library is available at https://github.com/roverwing/RoverWingLibrary/wiki
+We have created a library for use with RoverWing, which can be downloaded from https://roverwing.github.io/RoverWingLibrary. Complete user documentation for this library is available at https://github.com/roverwing/RoverWingLibrary/wiki
 
 
 
 
 License
 =======
+RoverWing is open source hardware; the design files are available from https://github.com/roverwing/RoverWingHardware. They are distributed under the terms of [Creative Commons Attribution, Share-Alike license](https://creativecommons.org/licenses/by-sa/4.0/)
+
+The RoverWing design is based in part on the design of Crickit board  by Adafruit: https://github.com/adafruit/Adafruit_Crickit_PCBs
+
+
+
