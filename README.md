@@ -75,7 +75,7 @@ which is then made available to the Feather board using ``getVoltage()`` functio
 Feather board connector
 =======================
 RoverWing can not be used without a Feather board. Youc an use any Father board from Adafruit, 
-or any 3rd party board that meets [Adafurit's specifications])(https://learn.adafruit.com/adafruit-feather/feather-specification). 
+or any 3rd party board that meets [Adafurit's specifications](https://learn.adafruit.com/adafruit-feather/feather-specification). 
 To connect the Feather board,
 plug it in the dual row female headers at the center of RoverWing. These headers
 provide connection between the RoverWing and the Feather, using power pins
@@ -184,8 +184,8 @@ use 5V power, so they can not be directly connected to 3.3V boards such as
 Adafruit Feather boards. RoverWing solves this problem by  including a voltage
 level shifter  chip (TX1004EWR).
 
-The sonars ports use JST PH4 connectors; see Cables_ for advice on choosing
-connector cables. The pin order is as follows:
+The sonars ports use JST PH4 connectors; see [Cables](README.md#Cables) section  
+for advice on choosing connector cables. The pin order is as follows:
 
 * GND (closest to board edge)
 * 5V
@@ -210,7 +210,8 @@ NeoPixel
 RoverWing  provides a port for connecting
 [NeoPixel smart LEDs](https://learn.adafruit.com/adafruit-neopixel-uberguide).
 This port uses JST PH3 connector, with the same pin order as used by Adafruit's
-Hallowing board:
+[Hallowing board](https://learn.adafruit.com/adafruit-hallowing/overview) and 
+some of their [NeoPixel strips](https://www.adafruit.com/product/3919):
 
 * GND (closest to board edge)
 * 5V
@@ -256,35 +257,33 @@ by the Feather. The ports use JST PH4 connectors, with the following pin order:
 
 This is the same connector and same  pin order as used by REV Robotics hub and
 by [Adafruit's STEMMA cables](https://www.adafruit.com/product/3950). You can
-aslo use SEEED Studio Grove cables; see Cables_ section for details.
+aslo use SEEED Studio Grove cables; see [Cables](README.md#Cables) section for details.
 
 RoverWing contains I2C bus pullup resistors, so no additional pullups are necessary.
 
 
+RoverWing Top 
+===================
+RoverWing top is an optional accessory for the RoverWing, which provides small prototyping area, three NeoPixel LEDs, buttons, and a 3 line OLED display. 
 
 
-
-
-
-Add-ons
-=======
 
 Cables
 ======
 Below is the list of suggested cables and places to buy them.
 
 * **Power and motor cables**. RoverWing uses JST VH connectors. You can buy JST VH 2-pin cables from many sources, including
- - REV Robotics (JST VH - JST VH, JST VH to PowerPoles).
- - ServoCity
+ - [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables) (JST VH - JST VH, JST VH to PowerPoles).
+ - [ServoCity](https://www.servocity.com/electronics/wiring/adaptors)
  - Amazon, eBay, AliExpress
 
 * **Encoders, Sonars, I2C**. RoverWing uses JST PH 4pin connectors for all of these ports. For the encoders,
 the pin order matches the one used by REV Robotics hub, so if you are using REV Robotics motors, you can
-directly connect the encoders using a JST PH - JST PH cable, which can be bought from REV Robotics.
+directly connect the encoders using a JST PH - JST PH cable, which can be bought from [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables).
 For other peripherals, you can use JST PH - female headers cable from Adafruit: https://www.adafruit.com/product/3950
 
 You can also use SEEED Studio Grove connectors. The contacts and spacing are identical, but the the plastic housing
-of Grove cable does not completely fit in the PH4 connector, so the fit will nto be perfect - but good enough
+of Grove cable does not completely fit in the PH4 connector, so the fit will not be perfect - but good enough
 for a solid electrical connection.
 
 * **Neopixel**. Roverwing uses JST PH 3pin connector for the NeoPixel port.
@@ -294,11 +293,14 @@ https://www.adafruit.com/product/3919 or you can use the JST ph3 to female
 socket adapter cable such as [this one](https://www.adafruit.com/product/3894).
 
 
-<a href="https://roverwing.readthedocs.io/en/latest//">Roverwing Home Page</a>
+Firmware
+========
+RoverWing comes preloaded with firmware. If you want to learn more about the firmware, install an update, or compile your own firmware from, please visit [RoverWing Firmware](https://roverwing.github.io/RoverWingFirmware/) github repository.
 
-<a href="https://roverwing.github.io/RoverWingLibrary/">Library</a>
+RoverWing Library
+=================
+We have created a library for use with RoverWing, which can be downloaded from https://roverwing.github.io/RoverWingLibrary. Complete suer documentation for thsi library is available at https://github.com/roverwing/RoverWingLibrary/wiki
 
-<a href="https://roverwing.github.io/RoverWingFirmware/">Firmware</a>
 
 
 
