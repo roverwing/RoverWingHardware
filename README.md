@@ -117,10 +117,10 @@ contains appropriate data fusion algorithm, combining the sensor data and
 filtering out noise to return the robot orientation, either as roll-pitch-yaw
 angles, or in a quaternion form.
 
-.. Note::
-   Even with noise filtering, data obtained from this sensor alone will always
-   suffer from accumulating error (drift); to compensate for it, you need to
-   use  an additional magnetometer (compass) sensor as described in GPS_ section.
+**Note**
+>   Even with noise filtering, data obtained from this sensor alone will always
+>   suffer from accumulating error (drift); to compensate for it, you need to
+>   use  an additional magnetometer (compass) sensor as described in [GPS](master.md#GPS and compass) section.
 
 
 
@@ -163,13 +163,13 @@ RoverWing provides four servo connections. They can be used for any servo which
 are controlled by standard PWM signal (500 us - 2500 us pulse duration) and
 5V power.
 
-.. Note::
-   That the total current available for servos and NeoPixel LEDs is about 4A.
-   This is sufficient for most applications, but might not be enough for large
-   loads.  For example, for a popular [HS485HB](https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product)
-   standard size servo, no-load current draw is 0.3A, but the stall draw  can be
-   as high as 1.2A. Note also that digital servos usually are much more
-   power-hungry than analog servos.
+**Note**
+>   The the total current available for servos and NeoPixel LEDs is about 4A.
+>   This is sufficient for most applications, but might not be enough for large
+>   loads.  For example, for a popular [HS485HB](https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product)
+>   standard size servo, no-load current draw is 0.3A, but the stall draw  can be
+>   as high as 1.2A. Note also that digital servos usually are much more
+>   power-hungry than analog servos.
 
 
 
@@ -204,7 +204,7 @@ one can say that it averages  several last readings
 of each sensor. Raw values can also be accessed, for those
 (uncommon) situations when it becomes necessary.
 
-.. _NeoPixel:
+
 NeoPixel
 ========
 RoverWing  provides a port for connecting
@@ -217,12 +217,12 @@ Hallowing board:
 * Data
 
 In addition, RoverWing contains an internal small NeoPixel LED. Normally it
-blinks green (about 4 times/s); if the battery voltage drops below preset limit,
+blinks green (about 4 times per second); if the battery voltage drops below preset limit,
 it turns yellow to warn the user. The battery level cutoff can be changed as
 described in the  documentation of RoverWing library. Other than that, the
 internal NeopIxel LED can not be controlled by the user.
 
-.. _GPS:
+
 GPS and compass
 ===============
 RoverWing provides connectors for external GPS and magnetometer (compass)
@@ -230,17 +230,17 @@ sensors. It uses the same connectors (Hirose DF13 6-pin + 4-pin) and pinouts as
 popular [Pixhawk flight controller board](http://ardupilot.org/copter/docs/common-pixhawk-overview.html)  used in
 quadcopters. Thus, you can use  any GPS and compass combination sensor which is
 compatible with Pixhawk 2.4. Such sensors can be found on eBay or AliExpress for
-as little as $15 (here is an [example](https://www.aliexpress.com/item/Ublox-NEO-M8N-M8N-8N-High-Precision-GPS-Built-in-Compass-w-Stand-Holder-for-APM/32370714787.html)).
+as little as $20 (here is an [example](https://www.aliexpress.com/item/Ublox-NEO-M8N-M8N-8N-High-Precision-GPS-Built-in-Compass-w-Stand-Holder-for-APM/32370714787.html)).
 
 The provided firmware takes care of reading the GPS and magnetometer sensors,
 providing an easy to use interface for the user. It can also combine the data
 from the IMU and magnetometer to provide a more reliable orientation data.
 
 
-.. Note::
-   TO avoid interference, it is recommended to place the magnetometer at least 15 cm (6 in) away from
-   the  motors and other electronics.
-   A GPS+compass sensor with a stand intended for quadcopters should work well.
+** Note**
+>   To avoid interference, it is recommended to place the magnetometer at least 15 cm (6 in) away from
+>   the  motors and other electronics.
+>   A GPS+compass sensor with a stand intended for quadcopters should work well.
 
 
 Additional I2C ports
@@ -269,7 +269,6 @@ RoverWing contains I2C bus pullup resistors, so no additional pullups are necess
 Add-ons
 =======
 
-.. _Cables:
 Cables
 ======
 Below is the list of suggested cables and places to buy them.
