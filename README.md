@@ -42,22 +42,48 @@ The sections below discuss these features in detail.
 ![alt text](https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/MainView.jpg)
    RoverWing (without the Feather), top view.
 
+
+**Table of contents**
+
+* [Power](README.md#Power)
+* [Feather board connector](README.md#Feather-board-connector)
+* [Microcontroller](README.md#Microcontroller)
+* [Inertial Motion Unit](README.md#Inertial-Motion-Unit)
+* [Motors and encoders](README.md#Motors-and-encoders)
+* [Servos](README.md#Servos)
+* [Sonars](README.md#Sonars)
+* [Analog inputs](README.md#Analog-inputs)
+* [NeoPixel](README.md#NeoPixel)
+* [GPS and compass](README.md#GPS-and-compass)
+* [Additional I2C ports](README.md#Additional-I2C-ports)
+* [RoverWing Top](README.md#RoverWing-Top)
+* [Cables](README.md#Cables)
+* [Firmware](README.md#Firmware)
+* [RoverWing Library](README.md#RoverWing-Library)
+* [License](README.md#License)
+
+ 
+
+
+
+
 Power
 =====
 
 The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO
 battery or  a 10-cell NiMH battery. The battery port uses JST VH male connector.
-We recommend using 18 AWG or larger cables for power supply;  see section
-`Cables`_ for list of compatible cables and adapters. There is also a power
+We recommend using 18 AWG or larger cables for power supply;  see section [Cables](https://github.com/roverwing/RoverWingHardware/blob/master/README.md#Cables)
+for list of compatible cables and adapters. There is also a power
 indicator LED next to the power connector. Note that the RoverWing **can not be
 powered via USB cable**.
 
-.. Warning::
-   The VH connectors are polarized, so they can only be plugged in one way.
-   Because of this, there  is no reverse  polarity protection on the board. If
-   you are making your own power cables, make sure to use the same polarity
-   convention as the RoverWing, otherwise you will permanently damage the
-   board!!
+**Warning**
+
+>   The VH connectors are polarized, so they can only be plugged in one way.
+>   Because of this, there  is no reverse  polarity protection on the board. If
+>   you are making your own power cables, make sure to use the same polarity
+>   convention as the RoverWing, otherwise you will permanently damage the
+>   board!!
 
 
 The board has a 5V high-efficiency  buck voltage converter  which powers the
@@ -73,7 +99,9 @@ which is then made available to the Feather board using ``getVoltage()`` functio
 
 Feather board connector
 =======================
-RoverWing can not be used without a Feather board. To connect the Feather board,
+RoverWing can not be used without a Feather board. You can use any Feather board from Adafruit, 
+or any 3rd party board that meets [Adafurit's specifications](https://learn.adafruit.com/adafruit-feather/feather-specification). 
+To connect the Feather board,
 plug it in the dual row female headers at the center of RoverWing. These headers
 provide connection between the RoverWing and the Feather, using power pins
 (ground and 3.3V), I2C pins (SDA and SCL) and reset pin, so that pressing the
@@ -91,13 +119,13 @@ adjacent pin of the Feather, except the two pins noted below:
 
 * VBAT pin of the Feather is not connected. Instead, the adjacent pin of the
   second row is connected to the NEOPIXEL_OUT signal of the RoverWing
-  (see section on NeoPixels_ below).
+  (see [NeoPixel](https://github.com/roverwing/RoverWingHardware/blob/master/README.md#NeoPixel) section  below).
 
 Microcontroller
 ===============
 The brains of the board is the SAMD21G microcontroller - same MCU used by
 Arduino ZERO and Adafruit Feather M0 boards. It comes preloaded with firmware,
-which is described in Firmware_ section below. Normally there is no need to
+which is described in [Firmware](README.md#Firmware) section below. Normally there is no need to
 change it.
 
 
@@ -114,10 +142,10 @@ contains appropriate data fusion algorithm, combining the sensor data and
 filtering out noise to return the robot orientation, either as roll-pitch-yaw
 angles, or in a quaternion form.
 
-.. Note::
-   Even with noise filtering, data obtained from this sensor alone will always
-   suffer from accumulating error (drift); to compensate for it, you need to
-   use  an additional magnetometer (compass) sensor as described in GPS_ section.
+**Note**
+>   Even with noise filtering, data obtained from this sensor alone will always
+>   suffer from accumulating error (drift); to compensate for it, you need to
+>   use  an additional magnetometer (compass) sensor as described in [GPS](master.md#GPS and compass) section.
 
 
 
@@ -131,7 +159,7 @@ motors with 7.4V power supply by limiting the maximal output power to 80\%. Each
 motor is controlled by DRV8871 motor driver by Texas Instruments, which can
 provide up to 2.9A per motor. The drivers are current limited, so the current
 will not exceed 2.9A even if the motor is stalled, which helps prevent motor
-burnout. The motor ports use JST VH connectors; see section Cables_ for list
+burnout. The motor ports use JST VH connectors; see section [Cables](README.md#Cables) for list
 of compatible cables and adapters.
 
 To avoid overheating, it is recommended to attach  additional heatsinks to the
@@ -149,8 +177,8 @@ and pin order is  shown below:
 * Channel A
 
 These are the same connectors and pinouts as used
-by REV Robotics hubs, so one can use the same encoder cables. For other
-suggested cables, see Cables_ section.
+by [REV Robotics hubs](http://www.revrobotics.com/rev-31-1153/), so one can use the same encoder cables. 
+For other suggested cables, see [Cables](README.md#Cables) section.
 
 
 
@@ -160,13 +188,13 @@ RoverWing provides four servo connections. They can be used for any servo which
 are controlled by standard PWM signal (500 us - 2500 us pulse duration) and
 5V power.
 
-.. Note::
-   That the total current available for servos and NeoPixel LEDs is about 4A.
-   This is sufficient for most applications, but might not be enough for large
-   loads.  For example, for a popular [HS485HB](https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product)
-   standard size servo, no-load current draw is 0.3A, but the stall draw  can be
-   as high as 1.2A. Note also that digital servos usually are much more
-   power-hungry than analog servos.
+**Note**
+>   The the total current available for servos and NeoPixel LEDs is about 4A.
+>   This is sufficient for most applications, but might not be enough for large
+>   loads.  For example, for a popular [HS485HB](https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product)
+>   standard size servo, no-load current draw is 0.3A, but the stall draw  can be
+>   as high as 1.2A. Note also that digital servos usually are much more
+>   power-hungry than analog servos.
 
 
 
@@ -181,8 +209,8 @@ use 5V power, so they can not be directly connected to 3.3V boards such as
 Adafruit Feather boards. RoverWing solves this problem by  including a voltage
 level shifter  chip (TX1004EWR).
 
-The sonars ports use JST PH4 connectors; see Cables_ for advice on choosing
-connector cables. The pin order is as follows:
+The sonars ports use JST PH4 connectors; see [Cables](README.md#Cables) section  
+for advice on choosing connector cables. The pin order is as follows:
 
 * GND (closest to board edge)
 * 5V
@@ -201,25 +229,26 @@ one can say that it averages  several last readings
 of each sensor. Raw values can also be accessed, for those
 (uncommon) situations when it becomes necessary.
 
-.. _NeoPixel:
+
 NeoPixel
 ========
 RoverWing  provides a port for connecting
 [NeoPixel smart LEDs](https://learn.adafruit.com/adafruit-neopixel-uberguide).
 This port uses JST PH3 connector, with the same pin order as used by Adafruit's
-Hallowing board:
+[Hallowing board](https://learn.adafruit.com/adafruit-hallowing/overview) and 
+some of their [NeoPixel strips](https://www.adafruit.com/product/3919):
 
 * GND (closest to board edge)
 * 5V
 * Data
 
 In addition, RoverWing contains an internal small NeoPixel LED. Normally it
-blinks green (about 4 times/s); if the battery voltage drops below preset limit,
+blinks green (about 4 times per second); if the battery voltage drops below preset limit,
 it turns yellow to warn the user. The battery level cutoff can be changed as
 described in the  documentation of RoverWing library. Other than that, the
 internal NeopIxel LED can not be controlled by the user.
 
-.. _GPS:
+
 GPS and compass
 ===============
 RoverWing provides connectors for external GPS and magnetometer (compass)
@@ -227,17 +256,17 @@ sensors. It uses the same connectors (Hirose DF13 6-pin + 4-pin) and pinouts as
 popular [Pixhawk flight controller board](http://ardupilot.org/copter/docs/common-pixhawk-overview.html)  used in
 quadcopters. Thus, you can use  any GPS and compass combination sensor which is
 compatible with Pixhawk 2.4. Such sensors can be found on eBay or AliExpress for
-as little as $15 (here is an [example](https://www.aliexpress.com/item/Ublox-NEO-M8N-M8N-8N-High-Precision-GPS-Built-in-Compass-w-Stand-Holder-for-APM/32370714787.html)).
+as little as $20 (here is an [example](https://www.aliexpress.com/item/Ublox-NEO-M8N-M8N-8N-High-Precision-GPS-Built-in-Compass-w-Stand-Holder-for-APM/32370714787.html)).
 
 The provided firmware takes care of reading the GPS and magnetometer sensors,
 providing an easy to use interface for the user. It can also combine the data
 from the IMU and magnetometer to provide a more reliable orientation data.
 
 
-.. Note::
-   TO avoid interference, it is recommended to place the magnetometer at least 15 cm (6 in) away from
-   the  motors and other electronics.
-   A GPS+compass sensor with a stand intended for quadcopters should work well.
+**Note**
+>   To avoid interference, it is recommended to place the magnetometer at least 15 cm (6 in) away from
+>   the  motors and other electronics.
+>   A GPS+compass sensor with a stand intended for quadcopters should work well.
 
 
 Additional I2C ports
@@ -253,52 +282,57 @@ by the Feather. The ports use JST PH4 connectors, with the following pin order:
 
 This is the same connector and same  pin order as used by REV Robotics hub and
 by [Adafruit's STEMMA cables](https://www.adafruit.com/product/3950). You can
-aslo use SEEED Studio Grove cables; see Cables_ section for details.
+aslo use SEEED Studio Grove cables; see [Cables](README.md#Cables) section for details.
 
 RoverWing contains I2C bus pullup resistors, so no additional pullups are necessary.
 
 
+RoverWing Top 
+===================
+RoverWing top is an optional accessory for the RoverWing, which provides small prototyping area, three NeoPixel LEDs, buttons, and a 3 line OLED display. 
 
 
 
-
-
-Add-ons
-=======
-
-.. _Cables:
 Cables
 ======
 Below is the list of suggested cables and places to buy them.
 
 * **Power and motor cables**. RoverWing uses JST VH connectors. You can buy JST VH 2-pin cables from many sources, including
- - REV Robotics (JST VH - JST VH, JST VH to PowerPoles).
- - ServoCity
- - Amazon, eBay, AliExpress
+
+  - [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables) (JST VH - JST VH, JST VH to PowerPoles).
+  - [ServoCity](https://www.servocity.com/electronics/wiring/adaptors)
+  - Amazon, eBay, AliExpress
 
 * **Encoders, Sonars, I2C**. RoverWing uses JST PH 4pin connectors for all of these ports. For the encoders,
 the pin order matches the one used by REV Robotics hub, so if you are using REV Robotics motors, you can
-directly connect the encoders using a JST PH - JST PH cable, which can be bought from REV Robotics.
+directly connect the encoders using a JST PH - JST PH cable, which can be bought from [REV Robotics](http://www.revrobotics.com/ftc/electronics/cables).
 For other peripherals, you can use JST PH - female headers cable from Adafruit: https://www.adafruit.com/product/3950
 
-You can also use SEEED Studio Grove connectors. The contacts and spacing are identical, but the the plastic housing
-of Grove cable does not completely fit in the PH4 connector, so the fit will nto be perfect - but good enough
-for a solid electrical connection.
+You can also use SEEED Studio [Grove cables](https://www.seeedstudio.com/cables-c-949.html), available from [Arrow](https://www.arrow.com/en/products/110990031/seeed-technology-limited). The contacts and spacing are identical, but the the plastic housing of Grove cable does not completely fit in the PH4 connector, so the fit will not be perfect - but good enough for a solid electrical connection.
 
-* **Neopixel**. Roverwing uses JST PH 3pin connector for the NeoPixel port.
+* **Neopixel**. Roverwing uses JST PH 3-pin connector for the NeoPixel port.
 This is the same connector and same pin order as used by Adafruit Hallowing. You
 can plug in a Neopixel strip such as this one from Adafruit directly:
 https://www.adafruit.com/product/3919 or you can use the JST ph3 to female
 socket adapter cable such as [this one](https://www.adafruit.com/product/3894).
 
 
-<a href="https://roverwing.readthedocs.io/en/latest//">Roverwing Home Page</a>
+Firmware
+========
+RoverWing comes preloaded with firmware. If you want to learn more about the firmware, install an update, or compile your own firmware from source, please visit [RoverWing Firmware](https://roverwing.github.io/RoverWingFirmware/) github repository.
 
-<a href="https://roverwing.github.io/RoverWingLibrary/">Library</a>
+RoverWing Library
+=================
+We have created a library for use with RoverWing, which can be downloaded from https://roverwing.github.io/RoverWingLibrary. Complete user documentation for this library is available at https://github.com/roverwing/RoverWingLibrary/wiki
 
-<a href="https://roverwing.github.io/RoverWingFirmware/">Firmware</a>
 
 
 
 License
 =======
+RoverWing is open source hardware; the design files are available from https://github.com/roverwing/RoverWingHardware. They are distributed under the terms of [Creative Commons Attribution, Share-Alike license](https://creativecommons.org/licenses/by-sa/4.0/)
+
+The RoverWing design is based in part on the design of Crickit board  by Adafruit: https://github.com/adafruit/Adafruit_Crickit_PCBs
+
+
+
