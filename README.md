@@ -319,11 +319,11 @@ socket adapter cable such as [this one](https://www.adafruit.com/product/3894).
 
 Firmware
 ========
-RoverWing comes preloaded with firmware. If you want to learn more about the firmware, install an update, or compile your own firmware from source, please visit [RoverWing Firmware](https://roverwing.github.io/RoverWingFirmware/) github repository.
+RoverWing comes preloaded with firmware. If you want to learn more about the firmware, install an update, or compile your own firmware from source, please visit [RoverWing Firmware](https://github.com/roverwing/RoverWingFirmware/) github repository.
 
 RoverWing Library
 =================
-We have created a library for use with RoverWing, which can be downloaded from https://roverwing.github.io/RoverWingLibrary. Complete user documentation for this library is available at https://github.com/roverwing/RoverWingLibrary/wiki
+We have created a library for use with RoverWing, which can be downloaded from https://github.com/roverwing/RoverWingLibrary. Complete user documentation for this library is available at https://github.com/roverwing/RoverWingLibrary/wiki
 
 
 
