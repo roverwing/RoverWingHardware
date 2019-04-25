@@ -173,8 +173,8 @@ and pin order is  shown below:
 
 * Ground (pin closest to board edge)
 * 3.3V
-* Channel B
 * Channel A
+* Channel B
 
 These are the same connectors and pinouts as used
 by [REV Robotics hubs](http://www.revrobotics.com/rev-31-1153/), so one can use the same encoder cables. 
@@ -288,8 +288,12 @@ RoverWing contains I2C bus pullup resistors, so no additional pullups are necess
 
 
 RoverWing Top 
-===================
-RoverWing top is an optional accessory for the RoverWing, which provides small prototyping area, three NeoPixel LEDs, buttons, and a 3 line OLED display. 
+=============
+RoverWing top is an optional accessory for the RoverWing, which provides small prototyping area, 
+three NeoPixel LEDs, buttons, and a 3 line OLED display. It is shown in the photo below.
+
+
+
 
 
 
