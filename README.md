@@ -1,4 +1,5 @@
 
+![](https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/roverwinglogo-pathconverted.png)
 
 Introduction
 ============
