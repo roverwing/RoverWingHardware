@@ -10,7 +10,7 @@ Below is the list of suggested cables and places to buy them.
 
   - `REV Robotics <http://www.revrobotics.com/ftc/electronics/cables>`__
     (JST VH - JST VH, JST VH to Anderson PowerPole).
-  - `ServoCity <https://www.servocity.com/electronics/wiring/adaptors`__
+  - `ServoCity <https://www.servocity.com/electronics/wiring/adaptors>`__
   - Amazon, eBay, AliExpress
 
 * **Encoders, Sonars, I2C**. RoverWing uses JST PH 4pin connectors for all of
@@ -19,7 +19,8 @@ Below is the list of suggested cables and places to buy them.
   directly connect the encoders using a JST PH - JST PH cable, which can be
   bought from `REV Robotics <http://www.revrobotics.com/ftc/electronics/cables>`__
   For other peripherals, you can use JST PH - female headers cable from Adafruit:
-  https://www.adafruit.com/product/3950
+  https://www.adafruit.com/product/3950.
+  
   You can also use SEEED Studio `Grove cables <https://www.seeedstudio.com/cables-c-949.html>`__,
   available from `Arrow <https://www.arrow.com/en/products/110990031/seeed-technology-limited>`_.
   The contacts and spacing are identical, but the plastic housing of Grove cable
