@@ -57,18 +57,7 @@ robotics competition, so it can be easily used with the same motors and sensors.
     :maxdepth: 2
 
     quickstart
-    power
-    feather
-    mcu
-    imu
-    motors
-    servos
-    sonars
-    analog
-    neopixel
-    gps
-    i2c
-    top
-    cables
+    details
+    accessories
     library
     license
