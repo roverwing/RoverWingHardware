@@ -1,6 +1,11 @@
 ===============
 RoverWing board
 ===============
+.. figure:: images/MainView.jpg
+    :alt: RoverWing
+    :width: 80%
+
+    RoverWing (without the Feather), top view.
 
 RoverWing is a  shield (or "wing", following Adafruit's terminology) for
 Adafruit's `Feather boards <https://www.adafruit.com/feather>`__.
@@ -43,13 +48,8 @@ Below is the list of key features of the RoverWing:
 
 The RoverWing uses same connectors for power supply, motors, encoders, and I2C
 sensor as the `REV Robotics Expansion hub <http://www.revrobotics.com/rev-31-1153>`__
-used in `First Tech Challenge <https://www.firstinspires.org/robotics/ftc`__
+used in `First Tech Challenge <https://www.firstinspires.org/robotics/ftc>`__
 robotics competition, so it can be easily used with the same motors and sensors.
-
-.. figure:: images/MainView.jpg
-    :alt: RoverWing
-
-    RoverWing (without the Feather), top view.
 
 
 .. toctree::
