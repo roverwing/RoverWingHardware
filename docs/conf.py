@@ -87,8 +87,8 @@ pygments_style = None
 #
 html_theme = 'custom_sphinx_rtd_theme'
 html_theme_path = ["_themes", ]
-html_logo = "images/roverwinglogo.png"
-# html_favicon = "assets/gm0-logo.ico"
+html_logo = "images/roverwinglogo-gold.png"
+html_favicon = "images/roverwing.ico"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
