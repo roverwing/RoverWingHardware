@@ -4,7 +4,7 @@ Power
 The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO
 battery or  a 10-cell NiMH battery. The battery port uses JST VH male connector.
 We recommend using 18 AWG or larger cables for power supply;  see
-section :doc:`Cables <cables>`_ for list of compatible cables and adapters.
+section :ref:`cables` for list of compatible cables and adapters.
 There is also a power indicator LED next to the power connector. Note that the
 RoverWing **can not be powered via USB cable**.
 
@@ -26,4 +26,5 @@ Note that 5V converter is capable of producing 4.5A output. Some of it is used b
 on-board electronics, leaving about 4A  available for  servos and NeoPixel LEDs.
 
 RoverWing also includes internal circuit for measuring power supply voltage,
-which is then made available to the Feather board using `getVoltage()` function.
+which is then made available to the Feather board using :code:`getVoltage()`
+function of RoverWing Arduino library.

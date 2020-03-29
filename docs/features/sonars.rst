@@ -8,7 +8,7 @@ use 5V power, so they can not be directly connected to 3.3V boards such as
 Adafruit Feather boards. RoverWing solves this problem by  including a voltage
 level shifter  chip (TX1004EWR).
 
-The sonars ports use JST PH4 connectors; see :doc:`Cables <cables>`_ section  
+The sonars ports use JST PH4 connectors; see :ref:`cables` section  
 for advice on choosing connector cables. The pin order is as follows:
 
 * GND (closest to board edge)
