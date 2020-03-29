@@ -28,5 +28,5 @@ and pin order is  shown below:
 
 These are the same connectors and pinouts as used
 by `REV Robotics hubs <http://www.revrobotics.com/rev-31-1153/>`__, so one can
-use the same encoder cables.  For other suggested cables, see :doc:`Cables <cables>`__
+use the same encoder cables.  For other suggested cables, see :ref:`cables`
 section.

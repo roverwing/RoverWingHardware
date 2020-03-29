@@ -53,7 +53,7 @@ robotics competition, so it can be easily used with the same motors and sensors.
 
 
 .. toctree::
-    :caption: RoverWing board
+    :caption: Table of Contents 
     :maxdepth: 2
 
     quickstart
