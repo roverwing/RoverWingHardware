@@ -50,7 +50,6 @@ version = release
 extensions = [
     'sphinx.ext.imgmath',
     'sphinx.ext.graphviz',
-    'sphinx_tabs.tabs',
     'sphinx_sitemap'
 ]
 
