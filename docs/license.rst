@@ -9,4 +9,4 @@ The RoverWing design is based in part on the design of CRICKIT board by
 Adafruit Industries: https://github.com/adafruit/Adafruit_Crickit_PCBs
 
 RoverWing was created by David Bershadsky and Alexander Kirillov,
-from `FTC team 4137 *Islandbots* <http://islandbots.org>`_.
+from `FTC team 4137 Islandbots <http://islandbots.org>`_.

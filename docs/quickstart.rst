@@ -5,9 +5,9 @@ To get started with your RoverWing board:
 
 1. Plug in your Feather board into the socket in the middle of RoverWing.
    You can use any Feather board or a 3rd party board that meets Adafruit's
-   Feather specifications. 
+   Feather specifications.
 
-2. Connect a power source (7-12V) to RoverWing, using the JST VH connector.
+2. Connect a power source (7-14V) to RoverWing, using the JST VH connector.
    Make sure that you use correct polarity! The green LED next to the power
    connector should turn green, and the small  NeoPixel indicator LED should
    start blinking green or yellow. Also, your Feather should now be powered, so

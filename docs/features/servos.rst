@@ -2,7 +2,7 @@
 Servos
 ======
 RoverWing provides four servo connections. They can be used for any hobby servo
- which is controlled by standard PWM signal (500 us - 2500 us pulse duration) and
+which is controlled by standard PWM signal (500 us - 2500 us pulse duration) and
 5V power.
 
 .. note::

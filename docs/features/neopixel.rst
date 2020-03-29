@@ -15,6 +15,6 @@ some of their `NeoPixel strips <https://www.adafruit.com/product/3919>`_:
 
 In addition, RoverWing contains an internal small NeoPixel LED. Normally it
 blinks green (about 4 times per second); if the battery voltage drops below
-preset limit, it turns yellow to warn the user. The battery level cutoff can be
-hanged as described in the  documentation of RoverWing library. Other than that,
-the internal NeoPixel LED can not be controlled by the user.
+preset limit, it turns yellow to warn the user. The battery level cutoff and
+LED brightness  can be changed as described in the  documentation of RoverWing
+library. Other than that, the internal NeoPixel LED can not be controlled by the user.
