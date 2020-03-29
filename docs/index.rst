@@ -7,9 +7,9 @@ RoverWing board
 
     RoverWing (without the Feather), top view.
 
-RoverWing is a  shield (or "wing", following Adafruit's terminology) for
+RoverWing is an extension board  (or "wing", following Adafruit's terminology) for
 Adafruit's `Feather boards <https://www.adafruit.com/feather>`__.
-This wing provides motor drivers, Inertial Motion Unit (IMU), and connection
+This extension board  provides motor drivers, Inertial Motion Unit (IMU), and connection
 ports for servos, sonars, GPS, and other peripherals commonly used by small
 mobile robots. It also contains a microcontroller preloaded with firmware
 to control these peripherals, which communicates with the Feather board using
@@ -70,6 +70,5 @@ robotics competition, so it can be easily used with the same motors and sensors.
     i2c
     top
     cables
-    firmware
     library
     license
