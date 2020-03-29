@@ -7,14 +7,14 @@ This section contains detailed description of board features.
     :caption: RoverWing board hardware details
     :maxdepth: 2
 
-    power
-    feather
-    mcu
-    imu
-    motors
-    servos
-    sonars
-    analog
-    neopixel
-    gps
-    i2c
+    features/power
+    features/feather
+    features/mcu
+    features/imu
+    features/motors
+    features/servos
+    features/sonars
+    features/analog
+    features/neopixel
+    features/gps
+    features/i2c
