@@ -4701,10 +4701,10 @@ consumption by allowing the system processor to burst read sensor data and then 
 <part name="C3" library="RoverWing" deviceset="CAP-CERAMIC-SMD" device="0805" value="100nF"/>
 <part name="C5" library="RoverWing" deviceset="CAP-CERAMIC-SMD" device="0805" value="33pF"/>
 <part name="U3" library="RoverWing" deviceset="PMIC-AZ1117EH-*" device="" technology="3.3"/>
-<part name="R16" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="2K"/>
-<part name="R13" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="2K"/>
-<part name="R14" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="2K"/>
-<part name="R15" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="2K"/>
+<part name="R16" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="1.5K"/>
+<part name="R13" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="1.5K"/>
+<part name="R14" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="1.5K"/>
+<part name="R15" library="Seeed-Resistor" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="1.5K"/>
 <part name="C21" library="RoverWing" deviceset="CAP-POL-SMD-6.3X5.4" device="" value="220uF"/>
 <part name="U9" library="ICM-42605" deviceset="ICM-42605" device=""/>
 </parts>
@@ -4722,18 +4722,18 @@ Alexander Kirillov</text>
 <text x="20.32" y="177.8" size="1.778" layer="94" font="vector">SAMD21G Microcontroller</text>
 <text x="52.07" y="39.116" size="1.778" layer="94">Micro USB header</text>
 <wire x1="96.52" y1="114.3" x2="96.52" y2="185.42" width="0.1524" layer="94"/>
-<wire x1="96.52" y1="114.3" x2="185.42" y2="114.3" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="114.3" x2="248.92" y2="114.3" width="0.1524" layer="94"/>
+<wire x1="96.52" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="114.3" x2="248.92" y2="114.3" width="0.1524" layer="94"/>
 <wire x1="248.92" y1="114.3" x2="248.92" y2="116.84" width="0.1524" layer="94"/>
 <text x="106.68" y="177.8" size="1.778" layer="94">Power supply</text>
 <text x="111.76" y="106.68" size="1.778" layer="94">Feather header</text>
-<wire x1="96.52" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="43.18" x2="248.92" y2="43.18" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="43.18" x2="185.42" y2="114.3" width="0.1524" layer="94"/>
+<wire x1="96.52" y1="43.18" x2="167.64" y2="43.18" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="43.18" x2="248.92" y2="43.18" width="0.1524" layer="94"/>
+<wire x1="167.64" y1="43.18" x2="167.64" y2="114.3" width="0.1524" layer="94"/>
 <text x="187.96" y="109.22" size="1.778" layer="94">IMU</text>
-<wire x1="185.42" y1="114.3" x2="185.42" y2="137.16" width="0.1524" layer="94"/>
-<wire x1="185.42" y1="137.16" x2="248.92" y2="137.16" width="0.1524" layer="94"/>
-<text x="190.5" y="132.08" size="1.778" layer="94">Voltage sensing divider</text>
+<wire x1="190.5" y1="114.3" x2="190.5" y2="137.16" width="0.1524" layer="94"/>
+<wire x1="190.5" y1="137.16" x2="248.92" y2="137.16" width="0.1524" layer="94"/>
+<text x="205.74" y="132.08" size="1.778" layer="94">Voltage sensing divider</text>
 <text x="105.41" y="39.116" size="1.778" layer="94">I2C pullups</text>
 </plain>
 <instances>
@@ -4872,17 +4872,17 @@ Alexander Kirillov</text>
 <attribute name="NAME" x="29.972" y="146.812" size="1.524" layer="95" ratio="10"/>
 <attribute name="VALUE" x="34.798" y="146.812" size="1.524" layer="96" ratio="10"/>
 </instance>
-<instance part="C15" gate="G$1" x="241.3" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="240.03" y="95.25" size="1.524" layer="95" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="243.84" y="95.25" size="1.524" layer="96" ratio="10" rot="R90"/>
+<instance part="C15" gate="G$1" x="238.76" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="241.046" y="90.17" size="1.524" layer="95" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="241.3" y="97.028" size="1.524" layer="96" ratio="10" rot="R90"/>
 </instance>
 <instance part="C18" gate="G$1" x="233.68" y="96.52" smashed="yes" rot="MR270">
-<attribute name="NAME" x="232.41" y="97.79" size="1.524" layer="95" ratio="10" rot="MR270"/>
-<attribute name="VALUE" x="236.22" y="97.79" size="1.524" layer="96" ratio="10" rot="MR270"/>
+<attribute name="NAME" x="236.22" y="95.504" size="1.524" layer="95" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="236.22" y="102.87" size="1.524" layer="96" ratio="10" rot="MR270"/>
 </instance>
-<instance part="C17" gate="G$1" x="248.92" y="96.52" smashed="yes" rot="R90">
-<attribute name="NAME" x="247.65" y="95.25" size="1.524" layer="95" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="251.46" y="95.25" size="1.524" layer="96" ratio="10" rot="R90"/>
+<instance part="C17" gate="G$1" x="246.38" y="96.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="245.11" y="90.17" size="1.524" layer="95" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="245.11" y="97.536" size="1.524" layer="96" ratio="10" rot="R90"/>
 </instance>
 <instance part="D1" gate="G$1" x="190.5" y="154.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="191.008" y="156.718" size="1.524" layer="95" ratio="10"/>
@@ -4937,21 +4937,21 @@ Alexander Kirillov</text>
 <attribute name="NAME" x="228.6" y="178.054" size="1.524" layer="95" font="vector" ratio="10"/>
 <attribute name="VALUE" x="218.186" y="177.546" size="1.524" layer="96" font="vector" ratio="10" align="top-left"/>
 </instance>
-<instance part="R16" gate="G$1" x="121.92" y="12.7" smashed="yes">
-<attribute name="NAME" x="118.11" y="13.97" size="1.524" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="118.11" y="10.16" size="1.524" layer="95" font="vector" ratio="10"/>
+<instance part="R16" gate="G$1" x="119.38" y="12.7" smashed="yes">
+<attribute name="NAME" x="115.57" y="13.97" size="1.524" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="121.158" y="13.97" size="1.524" layer="95" font="vector" ratio="10"/>
 </instance>
 <instance part="R13" gate="G$1" x="119.38" y="22.86" smashed="yes">
 <attribute name="NAME" x="115.57" y="24.13" size="1.524" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="115.57" y="20.32" size="1.524" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="121.412" y="23.876" size="1.524" layer="95" font="vector" ratio="10"/>
 </instance>
 <instance part="R14" gate="G$1" x="119.38" y="17.78" smashed="yes">
 <attribute name="NAME" x="115.57" y="19.05" size="1.524" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="115.57" y="15.24" size="1.524" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="120.904" y="19.05" size="1.524" layer="95" font="vector" ratio="10"/>
 </instance>
-<instance part="R15" gate="G$1" x="121.92" y="7.62" smashed="yes">
-<attribute name="NAME" x="118.11" y="8.89" size="1.524" layer="95" font="vector" ratio="10"/>
-<attribute name="VALUE" x="118.11" y="5.08" size="1.524" layer="95" font="vector" ratio="10"/>
+<instance part="R15" gate="G$1" x="119.38" y="7.62" smashed="yes">
+<attribute name="NAME" x="115.57" y="8.89" size="1.524" layer="95" font="vector" ratio="10"/>
+<attribute name="VALUE" x="120.904" y="8.636" size="1.524" layer="95" font="vector" ratio="10"/>
 </instance>
 <instance part="C21" gate="G$1" x="132.08" y="167.64" smashed="yes">
 <attribute name="NAME" x="133.096" y="168.275" size="1.524" layer="95" ratio="10"/>
@@ -5120,12 +5120,12 @@ Alexander Kirillov</text>
 <wire x1="233.68" y1="92.71" x2="233.68" y2="86.36" width="0.1524" layer="91"/>
 <junction x="233.68" y="86.36"/>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="92.71" x2="241.3" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="92.71" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="248.92" y1="92.71" x2="248.92" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="78.74" x2="241.3" y2="78.74" width="0.1524" layer="91"/>
-<junction x="241.3" y="78.74"/>
+<wire x1="246.38" y1="92.71" x2="246.38" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="78.74" x2="238.76" y2="78.74" width="0.1524" layer="91"/>
+<junction x="238.76" y="78.74"/>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="INT2/FSYNC"/>
@@ -5181,10 +5181,10 @@ Alexander Kirillov</text>
 <wire x1="106.68" y1="12.7" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="17.78" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="22.86" x2="106.68" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="118.11" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
 <junction x="106.68" y="12.7"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="118.11" y1="7.62" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="7.62" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="115.57" y1="22.86" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
 <junction x="106.68" y="22.86"/>
@@ -5221,13 +5221,13 @@ Alexander Kirillov</text>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="233.68" y1="101.6" x2="233.68" y2="100.33" width="0.1524" layer="91"/>
 <junction x="233.68" y="101.6"/>
-<wire x1="233.68" y1="104.14" x2="241.3" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="104.14" x2="248.92" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="104.14" x2="248.92" y2="100.33" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="104.14" x2="246.38" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="104.14" x2="246.38" y2="100.33" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="104.14" x2="241.3" y2="100.33" width="0.1524" layer="91"/>
-<junction x="241.3" y="104.14"/>
+<wire x1="238.76" y1="104.14" x2="238.76" y2="100.33" width="0.1524" layer="91"/>
+<junction x="238.76" y="104.14"/>
 </segment>
 <segment>
 <pinref part="U9" gate="G$1" pin="AP_CS"/>
@@ -5360,15 +5360,15 @@ Alexander Kirillov</text>
 <label x="10.16" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="134.62" y="22.86" size="1.778" layer="95"/>
+<label x="127" y="22.86" size="1.778" layer="95"/>
 <pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="22.86" x2="123.19" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="22.86" x2="123.19" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J15" gate="G$1" pin="21"/>
 <pinref part="J15" gate="G$1" pin="22"/>
 <wire x1="134.62" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="58.42" x2="170.18" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="58.42" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
 <junction x="149.86" y="58.42"/>
 <label x="154.94" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -5380,15 +5380,15 @@ Alexander Kirillov</text>
 <label x="10.16" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<label x="134.62" y="17.78" size="1.778" layer="95"/>
+<label x="127" y="17.78" size="1.778" layer="95"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="17.78" x2="123.19" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="17.78" x2="123.19" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J15" gate="G$1" pin="23"/>
 <pinref part="J15" gate="G$1" pin="24"/>
 <wire x1="134.62" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="55.88" x2="170.18" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
 <junction x="149.86" y="55.88"/>
 <label x="154.94" y="55.88" size="1.778" layer="95"/>
 </segment>
@@ -5435,7 +5435,7 @@ Alexander Kirillov</text>
 </segment>
 <segment>
 <pinref part="J15" gate="G$1" pin="6"/>
-<wire x1="149.86" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="78.74" x2="162.56" y2="78.74" width="0.1524" layer="91"/>
 <label x="154.94" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5460,8 +5460,8 @@ Alexander Kirillov</text>
 <label x="10.16" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="125.73" y1="12.7" x2="139.7" y2="12.7" width="0.1524" layer="91"/>
-<label x="134.62" y="12.7" size="1.778" layer="95"/>
+<wire x1="123.19" y1="12.7" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
+<label x="127" y="12.7" size="1.778" layer="95"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -5477,8 +5477,8 @@ Alexander Kirillov</text>
 <label x="10.16" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="125.73" y1="7.62" x2="139.7" y2="7.62" width="0.1524" layer="91"/>
-<label x="134.62" y="7.62" size="1.778" layer="95"/>
+<wire x1="123.19" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
+<label x="127" y="7.62" size="1.778" layer="95"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -5661,8 +5661,8 @@ Alexander Kirillov</text>
 <net name="NEOPIXEL_OUT" class="0">
 <segment>
 <pinref part="J15" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="83.82" x2="170.18" y2="83.82" width="0.1524" layer="91"/>
-<label x="149.86" y="83.82" size="1.778" layer="95"/>
+<wire x1="149.86" y1="83.82" x2="162.56" y2="83.82" width="0.1524" layer="91"/>
+<label x="147.32" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SONAR3TRIG" class="0">
