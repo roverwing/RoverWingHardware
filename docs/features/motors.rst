@@ -8,8 +8,8 @@ lower voltage and limit the power in software: for example, you can use 6V
 motors with 7.4V power supply by limiting the maximal output power to 80%. Each
 motor is controlled by DRV8871 motor driver by Texas Instruments, which can
 provide up to 2.9A per motor. The drivers are current limited, so the current
-will not exceed 2.9A even if the motor is stalled, which helps prevent motor
-burnout. The motor ports use JST VH connectors; see section
+will not exceed 2.9A even if the motor is stalled, which helps prevent driver
+overheating.  The motor ports use JST VH connectors; see section
 :ref:`cables` for list of compatible cables and adapters.
 
 To avoid overheating, it is recommended to attach  additional heatsinks to the

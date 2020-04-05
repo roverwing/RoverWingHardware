@@ -7,6 +7,7 @@ This section contains detailed description of board features.
     :caption: RoverWing board hardware details
     :maxdepth: 2
 
+    features/dimensions 
     features/power
     features/feather
     features/mcu

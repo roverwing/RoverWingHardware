@@ -126,3 +126,8 @@ htmlhelp_basename = 'RoverWingBoardSitedoc'
 
 # Changes imgmath_image_format to svg (default png)
 imgmath_image_format = 'svg'
+rst_epilog = """
+.. |library-guide| replace:: `RoverWing Library Guide`_
+
+.. _RoverWing Library Guide: https://roverwing-library.readthedocs.io
+"""
