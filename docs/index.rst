@@ -58,6 +58,7 @@ robotics competition, so it can be easily used with the same motors and sensors.
 
     quickstart
     details
-    accessories
+    top-intro
     library
+    accessories
     license

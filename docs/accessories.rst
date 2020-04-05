@@ -8,5 +8,6 @@ Kickstarter, please note that these accessories are not included.
     :caption: Accessories
     :maxdepth: 2
 
-    accessories/top
+    accessories/chassis
+    accessories/batteries
     accessories/cables
