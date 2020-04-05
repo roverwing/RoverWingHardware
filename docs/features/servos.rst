@@ -6,10 +6,13 @@ which is controlled by standard PWM signal (500 us - 2500 us pulse duration) and
 5V power.
 
 .. note::
-   The  total current available for servos and NeoPixel LEDs is about 4A.
+   The  total current available for servos and NeoPixel LEDs is about 3.5A.
    This is sufficient for most applications, but might not be enough for large
    loads.  For example, for a popular
    `HS485HB <https://hitecrcd.com/products/servos/sport-servos/analog-sport-servos/hs-485hb/product>`__
    standard size servo, no-load current draw is 0.3A, but the stall draw  can be
    as high as 1.2A. Note also that digital servos usually are much more
    power-hungry than analog servos.
+
+   If you need more power for your servos, we recommend using
+   `goBILDA Servo Power Node <https://www.gobilda.com/8-channel-servo-power-node/>`__. 

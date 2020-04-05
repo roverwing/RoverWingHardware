@@ -2,7 +2,7 @@
 Additional I2C Port
 ====================
 RoverWing has a  port for connecting additional I2C devices. This port are
-connected to the I2C bus of the Feather board and thus are controlled directly
+connected to the I2C bus of the Feather board and thus is controlled directly
 by the Feather. The ports use JST PH4 connectors, with the following pin order:
 
 * GND (closest to board edge)

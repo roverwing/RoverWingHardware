@@ -5,14 +5,14 @@ The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO
 battery or  a 10-cell NiMH battery. There is a power indicator LED next to the
 power connector.
 
- The battery port uses XT30 male connector,
+The battery port uses XT30 male connector,
 so it can be used directly with batteries with XT30 female connector. We also
 include an adapter for connecting batteries with XT60 connector, one of the
 most popular connectors for LiPo batteries used for quadcopters and RC cars. See
-section :ref:`cables` for more information about available cables and adapters 
+section :ref:`cables` for more information about available cables and adapters
 for connecting other types of batteries.
 
- Note that the RoverWing **can not be powered via USB cable**.
+Note that the RoverWing **can not be powered via USB cable**.
 
 .. warning::
 

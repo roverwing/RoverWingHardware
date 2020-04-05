@@ -3,7 +3,7 @@ Feather Board Connector
 =======================
 RoverWing can not be used without a Feather board. You can use any Feather
 board from Adafruit, or any 3rd party board that meets
-`Adafurit's specifications <https://learn.adafruit.com/adafruit-feather/feather-specification>`_.
+`Adafruit's specifications <https://learn.adafruit.com/adafruit-feather/feather-specification>`_.
 To connect the Feather board, plug it in the dual row female headers at the
 center of RoverWing. These headers provide connection between the RoverWing and
 the Feather, using power pins (ground and 3.3V), I2C pins (SDA and SCL) and
@@ -28,5 +28,3 @@ adjacent pin of the Feather, except the two pins noted below:
    It is recommended that you disconnect the power from the RoverWing before
    plugging or unplugging the Feather board. Also, be very careful when
    unplugging  the Feather board so that you do not bend the pins.
-
-   
