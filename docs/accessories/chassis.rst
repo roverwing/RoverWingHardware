@@ -21,7 +21,7 @@ Below are some of the chassis we recommend:
    The encoders which Pololu recommends for use with Romi chassis are rated for
    3.5V and above. Since the RoverWing encoder port provides only 3.3V voltage,
    there is no guarantee that these encoders will work with RoverWing. Instead,
-   use one of the encoders on `this page <https://www.pololu.com/category/202/romi-chassis-and-accessories>`__,
+   use one of the encoders on `this page <https://www.pololu.com/category/201/encoders>`__,
    which can use voltage between 2.7-18 V.
 
 * **DAGU 5 tracked chassis**: https://www.pololu.com/product/1550 or
@@ -30,4 +30,4 @@ Below are some of the chassis we recommend:
 * **TS100 tank chassis** by DoIT: https://www.aliexpress.com/item/32776140631.html
   Combined with a 3-cell LiPo battery, this becomes a great outdoor tank. Note
   that the motors do not come with encoders; instead, you can use GPS for
-  outdoors navigation. 
+  outdoors navigation.

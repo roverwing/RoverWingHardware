@@ -25,14 +25,16 @@ Assembly steps
    RoverWing and remove the Feather board.
 
 
-1. Solder wiring to the switch and insert the switch
+1. Attach the standoffs to the RoverWing board
 
-2. Solder the graphics display
+2. Insert and solder the headers
 
-3. Attach the standoffs to the RoverWing board
+3. Solder wiring to the switch and insert the switch into the opening of the top
 
-4. Insert and solder the headers
+4. Remove the top and solder the graphics display
 
-5. Remove the top, , insert the Feather board, attach power and peripherals
+5. Plug  the Feather board into RoverWing; reattach peripherals
 
-6. Reattach the board and crew the standoff nuts.
+6. Reattach the top  and tighten the standoff nuts.
+
+7. Reconnect the battery

@@ -23,7 +23,7 @@ adjacent pin of the Feather, except the two pins noted below:
   additional electronics.
 
 * VBAT pin of the Feather is not connected. Instead, the adjacent pin of the
-  second row is connected to the NEOPIXEL_OUT signal of the RoverWing
+  second row is connected to the ``NEOPIXEL_OUT`` signal of the RoverWing
   (see :ref:`neopixel` section).
 
 .. warning::

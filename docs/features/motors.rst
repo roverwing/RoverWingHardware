@@ -30,3 +30,9 @@ These are the same connectors and pinouts as used
 by `REV Robotics hubs <http://www.revrobotics.com/rev-31-1153/>`__, so one can
 use the same encoder cables.  For other suggested cables, see :ref:`cables`
 section.
+
+.. warning::
+
+   RoverWing provides 3.3V for the encoderс. Some encoders require 5V or higher,
+   so they won't work with RoverWing. Please check the specs of your encoders
+   before starting your build!
