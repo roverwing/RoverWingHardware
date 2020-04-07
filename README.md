@@ -21,7 +21,8 @@ Below is the list of key features of the RoverWing:
 
 * Contains on-board microcontroller, which takes care of low-level operations such as counting motor encoder pulses, using preloaded firmware
 
-* Contains on-board 6DOF  Inertial Motion Unit (IMU), based on MPU6050 chip, which can be used for tracking robot orientation in space
+* Contains on-board 6DOF  Inertial Motion Unit (IMU),  based on ICM-42605 chip
+  by Invensense, which can be used for tracking robot orientation in space
 
 * Provides the hardware and firmware support for connecting the following external peripherals
 
@@ -38,7 +39,7 @@ The RoverWing uses same connectors for power supply, motors, encoders, and I2C
 sensors as the [REV Robotics Expansion hub](http://www.revrobotics.com/rev-31-1153)  used in [First Tech Challenge](https://www.firstinspires.org/robotics/ftc)  robotics competition, so it can
 be easily used with the same motors and sensors.
 
-![alt text](https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/MainView.jpg)
+![alt text](https://raw.githubusercontent.com/roverwing/RoverWingHardware/master/docs/images/MainView.jpg)
    RoverWing (without the Feather), top view.
 
 For complete documentation of RoverWing board, please visit https://roverwing-board.readthedocs.io/.
