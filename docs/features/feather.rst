@@ -1,3 +1,5 @@
+.. _feather:
+
 =======================
 Feather Board Connector
 =======================
