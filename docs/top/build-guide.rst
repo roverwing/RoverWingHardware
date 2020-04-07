@@ -4,7 +4,7 @@
 RoverWing Top Assembly
 ===========================
 
-(Work in progress - at the moment it is just a draft). 
+(Work in progress - at the moment it is just a draft).
 
 Parts included
 --------------
