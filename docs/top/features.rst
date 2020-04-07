@@ -28,13 +28,13 @@ sketches.
    the RoverWing board itself --- instead, use the port on the top.
 
 * A small **prototyping area**, providing connections for all the pins of
-  Feather board (except USB and VBUT), and 5V power rail of the RoverWing.
+  Feather board (except USB and VBAT), and 5V power rail of the RoverWing.
 
 * Holes for additional headers/connectors along the edge of the RoverWing top,
   which can be used to  connect additional sensors and other peripherals.
   Each group of holes allows soldering either a one-row header with standard
   0.1" pitch (straight or 90 degree), or a 2mm pitch connector such as JST PH
-  or Grove. 
+  or Grove.
 
 
 .. note::
