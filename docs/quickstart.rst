@@ -7,7 +7,7 @@ QuickStart Guide
    pins protrude at the bottom of the board and are not insulated. If these
    pins come in contact with any metal, it could result in a short circuit
    which could permanently damage the board or even cause a fire. Thus, make
-   sure to only place RoverWing on an insulated surfaces - for example, do not
+   sure to only place RoverWing on  insulated surfaces - for example, do not
    place it on your work table littered with random screws.
 
 To get started with your RoverWing board:
