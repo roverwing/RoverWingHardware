@@ -5,7 +5,8 @@ Cables
 ======
 Below is the list of suggested cables and places to buy them.
 
-* **Power**. RoverWing board uses XT30 connector for main power, same as used
+* **Power**. RoverWing board uses XT30 connector for main power; the  same
+  connector is  used
   by REV Robotics Expansion hub used in First Tech Challenge competition. In
   addition, and adapter cable is included, allowing you to use a battery with
   the XT60 connector, popular among quadcopter and RC car enthusiasts. If you
@@ -25,7 +26,7 @@ Below is the list of suggested cables and places to buy them.
   these ports. For the encoders, the pin order matches the one used by REV
   Robotics hub, so if you are using REV Robotics motors, you can
   directly connect the encoders using a JST PH - JST PH cable, which can be
-  bought from `REV Robotics <http://www.revrobotics.com/ftc/electronics/cables>`__
+  bought from `REV Robotics <http://www.revrobotics.com/ftc/electronics/cables>`__.
   For other peripherals, you can use JST PH - female headers cable from Adafruit:
   https://www.adafruit.com/product/3950.
 
@@ -36,7 +37,8 @@ Below is the list of suggested cables and places to buy them.
   but good enough for a solid electrical connection.
 
 * **NeoPixel**. Roverwing uses JST PH 3-pin connector for the NeoPixel port.
-  This is the same connector and same pin order as used by Adafruit Hallowing. You
-  can plug in a Neopixel strip such as this one from Adafruit directly:
-  https://www.adafruit.com/product/3919 or you can use the JST ph3 to female
+  This is the same connector and same pin order as used by
+  `Adafruit Hallowing <https://learn.adafruit.com/adafruit-hallowing>`__. You
+  can plug in a NeoPixel strip such as this one from Adafruit directly:
+  https://www.adafruit.com/product/3919 or you can use the JST PH3 to female
   socket adapter cable such as `this one <https://www.adafruit.com/product/3894>`__.

@@ -1,5 +1,5 @@
 ====================
-Additional I2C Port
+I2C Port
 ====================
 RoverWing has a  port for connecting additional I2C devices. This port is
 connected to the I2C bus of the Feather board and thus is controlled directly
@@ -17,5 +17,5 @@ also use SEEED Studio Grove cables; see :ref:`cables` section for details.
 RoverWing contains I2C bus pullup resistors, so no additional pullups are necessary.
 
 .. note::
-   If you need to connect more than one I2C device, you can use an I2C 
+   If you need to connect more than one I2C device, you can use an I2C
    multiplexer such as `this one <https://learn.adafruit.com/adafruit-tca9548a-1-to-8-i2c-multiplexer-breakout>`__.

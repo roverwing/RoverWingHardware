@@ -21,11 +21,11 @@ Note that the RoverWing **can not be powered via USB cable**.
     you are making your own power cables, make sure to use the correct polarity,
     otherwise you will permanently damage the board!!
 
-    Also, connecting/disconnecting XT30 connector requires some force if you
+    Also, connecting/disconnecting XT30 connector requires some force;  if you
     are not careful, you could end up ripping the connector off the board. It
     is advised to plug in an XT30 extension cable (or XT30-XT60 extension
     included with the RoverWing) permanently and connect/disconnect the battery
-    to the extension cable when needed. 
+    to the extension cable when needed.
 
 The board has a 5V high-efficiency  buck voltage converter  which powers the
 sonars, Neopixel LEDs, servos, and a 3.3V linear regulator. The linear regulator
