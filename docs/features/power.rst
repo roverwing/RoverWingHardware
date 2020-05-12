@@ -1,6 +1,9 @@
-===========
-Power
-===========
+===============
+Power and Reset
+===============
+
+Power Source
+============
 The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO
 battery or  a 10-cell NiMH battery. There is a power indicator LED next to the
 power connector.
@@ -35,6 +38,29 @@ microcontroller, and IMU.
 Note that 5V converter is capable of producing 4A output. Some of it is used by
 on-board electronics, leaving about 3.5A  available for  servos and NeoPixel LEDs.
 
-RoverWing also includes internal circuit for measuring power supply voltage,
+Power Indicators
+================
+RoverWing contains two LED indicators. There is a small green LED next to the
+power connector; it lights up whenever RoverWing is powered.
+
+In addiiton,  RoverWing also  contains an internal small NeoPixel LED next to
+the servo port. Normally it blinks green (about 4 times per second) to indicate
+that RoverWing firmware is running.  If the battery voltage drops below
+preset limit, it turns red to warn the user. The battery level cutoff and
+LED brightness  can be changed as described in |library-guide|.
+Other than that, the internal NeoPixel LED can not be controlled by  the user.
+
+Voltage Sensor
+==============
+RoverWing  includes an internal circuit for measuring power supply voltage,
 which is then made available to the Feather board using :code:`getVoltage()`
 function of RoverWing Arduino library.
+
+Reset Button
+============
+RoverWing contains a reset button next to the USB connector. Pressing this
+button resets both the RoverWing and the connected Feather board.
+
+Pressing the reset button twice puts the RoverWing in boot mode, used for
+uploading new firmware; this is indicated by dim red color of the NeoPixel LED.
+To exit the boot mode, press the reset button once. 
