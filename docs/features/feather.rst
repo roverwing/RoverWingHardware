@@ -11,7 +11,7 @@ center of RoverWing. These headers provide connection between the RoverWing and
 the Feather, using power pins (ground and 3.3V), I2C pins (SDA and SCL) and
 reset pin, so that pressing the reset button on either the RoverWing or the
 Feather resets both of them. RoverWing contains the necessary pull-up resistors
-(2.7K) for the I2C bus.
+(1.8K) for the I2C bus.
 
 The second row of the female header gives an easy way of connecting additional
 electronics to the Feather. Each pin of the second row is connected to the

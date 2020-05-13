@@ -33,6 +33,6 @@ section.
 
 .. warning::
 
-   RoverWing provides 3.3V for the encoderс. Some encoders require 5V or higher,
+   RoverWing provides 3.3V for the encoders. Some encoders require 5V or higher,
    so they won't work with RoverWing. Please check the specs of your encoders
    before starting your build!

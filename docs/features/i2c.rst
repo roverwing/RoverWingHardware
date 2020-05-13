@@ -5,7 +5,7 @@ RoverWing has a  port for connecting additional I2C devices. This port is
 connected to the I2C bus of the Feather board and thus is controlled directly
 by the Feather. The port uses JST SH4 connector, also known as Qwiic (SparkFun)
 or Stemma QT (Adafurit). The  pin order is as follows (this matches Qwiic/Stemma
- QT pin order):
+QT pin order):
 
 * GND (closest to board edge)
 * 3.3V

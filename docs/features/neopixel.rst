@@ -24,5 +24,5 @@ You can connect up to 128 NeoPixels; note, however, that RoverWing can only
 provide up to 3.5A currrent for NeoPixels and servos combined. Since each
 NeoPixel can use up to 60mA, it means that you can not power more than 60
 NeoPixels at full power, and that only if you do not use any servos. (It
-shoudl be noted, though, that 60 mA is absolute maximum - much more typical
+should be noted, though, that 60 mA is absolute maximum - much more typical
 power consumption is 20 mA).
