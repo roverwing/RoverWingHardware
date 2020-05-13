@@ -4743,7 +4743,7 @@ consumption by allowing the system processor to burst read sensor data and then 
 <part name="U$26" library="RoverWing-V1.5" deviceset="MOUNTINGHOLE" device="3.0_NPH"/>
 <part name="U$27" library="RoverWing-V1.5" deviceset="MOUNTINGHOLE" device="3.0_NPH"/>
 <part name="GND15" library="RoverWing-V1.5" deviceset="GND" device=""/>
-<part name="U8" library="RoverWing-V1.5" deviceset="74*1G125" device="DBV" technology="AHCT"/>
+<part name="U7" library="RoverWing-V1.5" deviceset="74*1G125" device="DBV" technology="AHCT"/>
 <part name="J13" library="RoverWing-V1.5" deviceset="HEADER-3X06" device="&quot;"/>
 <part name="J11" library="RoverWing-V1.5" deviceset="HEADER-PH-3P" device=""/>
 <part name="J8" library="RoverWing-V1.5" deviceset="HEADER-PH-4P" device=""/>
@@ -4823,6 +4823,7 @@ consumption by allowing the system processor to burst read sensor data and then 
 <part name="R19" library="RoverWing-V1.5" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="1.8K"/>
 <part name="R20" library="RoverWing-V1.5" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="1.8K"/>
 <part name="C16" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0805" value="100nF"/>
+<part name="R21" library="RoverWing-V1.5" deviceset="SMD-RES-1.8K-1%-1/10W(0603)" device="" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -6095,11 +6096,11 @@ Alexander Kirillov</text>
 <instance part="U$25" gate="G$1" x="27.94" y="10.16" smashed="yes"/>
 <instance part="U$26" gate="G$1" x="35.56" y="10.16" smashed="yes"/>
 <instance part="U$27" gate="G$1" x="43.18" y="10.16" smashed="yes"/>
-<instance part="U8" gate="A" x="193.04" y="149.86" smashed="yes">
+<instance part="U7" gate="A" x="193.04" y="149.86" smashed="yes">
 <attribute name="NAME" x="185.42" y="155.575" size="1.524" layer="96" ratio="10"/>
 <attribute name="VALUE" x="171.45" y="153.67" size="1.27" layer="95" ratio="10"/>
 </instance>
-<instance part="U8" gate="P" x="198.12" y="149.86" smashed="yes"/>
+<instance part="U7" gate="P" x="198.12" y="149.86" smashed="yes"/>
 <instance part="J13" gate="G$1" x="195.58" y="88.9" smashed="yes">
 <attribute name="NAME" x="190.5" y="111.76" size="1.524" layer="96" ratio="10"/>
 </instance>
@@ -6154,7 +6155,7 @@ Alexander Kirillov</text>
 <attribute name="NAME" x="127.635" y="48.26" size="1.524" layer="96" ratio="10"/>
 <attribute name="VALUE" x="117.475" y="28.8925" size="1.524" layer="96" font="vector" ratio="10"/>
 </instance>
-<instance part="D2" gate="G$1" x="220.98" y="152.4" smashed="yes"/>
+<instance part="D2" gate="G$1" x="226.06" y="152.4" smashed="yes"/>
 <instance part="GND8" gate="1" x="129.54" y="127" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="132.08" y="124.46" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -6198,9 +6199,13 @@ Alexander Kirillov</text>
 <attribute name="NAME" x="46.99" y="72.39" size="1.524" layer="95" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="41.656" y="74.168" size="1.524" layer="95" font="vector" ratio="10" rot="R270"/>
 </instance>
-<instance part="C16" gate="G$1" x="209.55" y="162.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="208.28" y="158.75" size="1.524" layer="95" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="212.09" y="158.75" size="1.524" layer="96" ratio="10" rot="R90"/>
+<instance part="C16" gate="G$1" x="204.47" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="203.2" y="158.75" size="1.524" layer="95" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="207.01" y="158.75" size="1.524" layer="96" ratio="10" rot="R90"/>
+</instance>
+<instance part="R21" gate="G$1" x="208.28" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="210.82" y="148.844" size="1.524" layer="95" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="209.804" y="152.146" size="1.524" layer="95" font="vector" ratio="10" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -6283,23 +6288,23 @@ Alexander Kirillov</text>
 <label x="116.84" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U8" gate="P" pin="GND"/>
+<pinref part="U7" gate="P" pin="GND"/>
 <pinref part="D2" gate="G$1" pin="GND"/>
 <junction x="198.12" y="142.24"/>
-<wire x1="220.98" y1="142.24" x2="209.804" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="209.55" y1="142.24" x2="198.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="142.24" x2="204.47" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="142.24" x2="198.12" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="144.78" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="142.24" x2="220.98" y2="142.24" width="0.1524" layer="91"/>
-<junction x="220.98" y="142.24"/>
+<wire x1="233.68" y1="142.24" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
+<junction x="226.06" y="142.24"/>
 <pinref part="J11" gate="G$1" pin="3"/>
 <wire x1="238.76" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
 <label x="233.68" y="142.24" size="1.778" layer="95"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="198.12" y1="142.24" x2="198.12" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="209.55" y1="158.75" x2="209.55" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="209.55" y1="142.24" x2="209.804" y2="142.24" width="0.1524" layer="91"/>
-<junction x="209.55" y="142.24"/>
+<wire x1="204.47" y1="158.75" x2="204.47" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="142.24" x2="203.2" y2="142.24" width="0.1524" layer="91"/>
+<junction x="204.47" y="142.24"/>
 </segment>
 <segment>
 <wire x1="129.54" y1="129.54" x2="129.54" y2="139.7" width="0.1524" layer="91"/>
@@ -6361,7 +6366,7 @@ Alexander Kirillov</text>
 </segment>
 <segment>
 <wire x1="193.04" y1="160.02" x2="193.04" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="U8" gate="A" pin="OE"/>
+<pinref part="U7" gate="A" pin="OE"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -6495,22 +6500,22 @@ Alexander Kirillov</text>
 </segment>
 <segment>
 <pinref part="D2" gate="G$1" pin="VDD"/>
-<wire x1="226.06" y1="167.64" x2="226.06" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="170.18" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="167.64" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="170.18" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="147.32" x2="236.22" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="170.18" x2="226.06" y2="170.18" width="0.1524" layer="91"/>
-<junction x="226.06" y="170.18"/>
-<pinref part="U8" gate="P" pin="VCC"/>
+<wire x1="236.22" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
+<junction x="231.14" y="170.18"/>
+<pinref part="U7" gate="P" pin="VCC"/>
 <wire x1="198.12" y1="157.48" x2="198.12" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="170.18" x2="209.55" y2="170.18" width="0.1524" layer="91"/>
-<label x="220.98" y="172.72" size="1.778" layer="95"/>
+<wire x1="198.12" y1="170.18" x2="204.47" y2="170.18" width="0.1524" layer="91"/>
+<label x="226.06" y="172.72" size="1.778" layer="95"/>
 <pinref part="J11" gate="G$1" pin="2"/>
-<wire x1="209.55" y1="170.18" x2="226.06" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="170.18" x2="231.14" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="238.76" y1="147.32" x2="236.22" y2="147.32" width="0.1524" layer="91"/>
 <label x="236.22" y="147.32" size="1.778" layer="95"/>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="209.55" y1="166.37" x2="209.55" y2="170.18" width="0.1524" layer="91"/>
-<junction x="209.55" y="170.18"/>
+<wire x1="204.47" y1="166.37" x2="204.47" y2="170.18" width="0.1524" layer="91"/>
+<junction x="204.47" y="170.18"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -6633,7 +6638,7 @@ Alexander Kirillov</text>
 <segment>
 <wire x1="182.88" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
 <label x="175.26" y="147.32" size="1.778" layer="95"/>
-<pinref part="U8" gate="A" pin="I"/>
+<pinref part="U7" gate="A" pin="I"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -6720,16 +6725,7 @@ Alexander Kirillov</text>
 <segment>
 <pinref part="D2" gate="G$1" pin="DO"/>
 <pinref part="J11" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="149.86" x2="238.76" y2="149.86" width="0.1524" layer="91"/>
 <label x="248.92" y="152.4" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="NEOPIXEL_INTERNAL" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="DI"/>
-<pinref part="U8" gate="A" pin="O"/>
-<wire x1="203.2" y1="149.86" x2="208.28" y2="149.86" width="0.1524" layer="91"/>
-<label x="205.74" y="144.78" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="ANALOG1" class="0">
@@ -6830,6 +6826,20 @@ Alexander Kirillov</text>
 <label x="33.02" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="2"/>
+<pinref part="U7" gate="A" pin="O"/>
+<wire x1="204.47" y1="149.86" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="D2" gate="G$1" pin="DI"/>
+<wire x1="212.09" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -6848,23 +6858,13 @@ Alexander Kirillov</text>
 <approved hash="104,1,43.18,149.86,U1,VDDIN,3.3V,,,"/>
 <approved hash="104,1,50.8,149.86,U1,VDDIO1,3.3V,,,"/>
 <approved hash="104,1,48.26,149.86,U1,VDDIO2,3.3V,,,"/>
-<approved hash="104,2,198.12,157.48,U8P,VCC,5V,,,"/>
-<approved hash="104,2,30.48,93.98,U7,VCCA,3.3V,,,"/>
-<approved hash="104,2,60.96,93.98,U7,VCCB,5V,,,"/>
-<approved hash="104,2,226.06,167.64,D2,VDD,5V,,,"/>
-<approved hash="104,1,228.6,104.14,U9,VDD,3.3V,,,"/>
-<approved hash="104,1,228.6,101.6,U9,VDDIO,3.3V,,,"/>
 <approved hash="104,1,109.22,152.4,J1,+,12V,,,"/>
 <approved hash="104,1,109.22,147.32,J1,-,GND,,,"/>
-<approved hash="206,1,233.68,172.72,3.3V,,,,,"/>
-<approved hash="206,2,60.96,78.74,3.3V,,,,,"/>
 <approved hash="208,1,30.48,25.4,GND,sup,,,,"/>
 <approved hash="208,1,50.8,58.42,GND,sup,,,,"/>
 <approved hash="208,1,90.678,101.6,GND,sup,,,,"/>
 <approved hash="208,1,236.22,124.46,GND,sup,,,,"/>
 <approved hash="208,1,66.04,11.43,GND,sup,,,,"/>
-<approved hash="208,1,233.68,68.834,GND,sup,,,,"/>
-<approved hash="208,1,177.8,86.36,GND,out,,,,"/>
 <approved hash="208,1,144.78,160.02,GND,sup,,,,"/>
 <approved hash="208,1,154.94,127,GND,sup,,,,"/>
 <approved hash="208,1,224.536,151.13,GND,sup,,,,"/>
@@ -6875,15 +6875,12 @@ Alexander Kirillov</text>
 <approved hash="208,2,76.2,147.32,GND,sup,,,,"/>
 <approved hash="208,2,48.26,172.72,GND,sup,,,,"/>
 <approved hash="208,2,106.68,172.72,GND,sup,,,,"/>
-<approved hash="208,2,193.04,167.64,GND,sup,,,,"/>
-<approved hash="208,2,27.94,76.2,GND,sup,,,,"/>
 <approved hash="208,2,109.22,147.32,GND,sup,,,,"/>
 <approved hash="208,2,198.12,137.16,GND,sup,,,,"/>
 <approved hash="208,2,129.54,129.54,GND,sup,,,,"/>
 <approved hash="208,2,210.82,45.72,GND,sup,,,,"/>
 <approved hash="106,2,124.46,38.1,N$26,,,,,"/>
 <approved hash="106,2,124.46,35.56,N$27,,,,,"/>
-<approved hash="113,2,220.98,154.94,D2,,,,,"/>
 </errors>
 </schematic>
 </drawing>

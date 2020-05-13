@@ -22,7 +22,7 @@ Below is the list of suggested cables and places to buy them.
   - `ServoCity <https://www.servocity.com/electronics/wiring/adaptors>`__
   - Amazon, eBay, AliExpress
 
-* **Encoders, Sonars, I2C**. RoverWing uses JST PH 4pin connectors for all of
+* **Encoders, Sonars**. RoverWing uses JST PH 4pin connectors for all of
   these ports. For the encoders, the pin order matches the one used by REV
   Robotics hub, so if you are using REV Robotics motors, you can
   directly connect the encoders using a JST PH - JST PH cable, which can be
@@ -35,6 +35,14 @@ Below is the list of suggested cables and places to buy them.
   The contacts and spacing are identical, but the plastic housing of Grove cable
   does not completely fit in the PH4 connector, so the fit will not be perfect -
   but good enough for a solid electrical connection.
+
+* **I2C port**. RoverWing uses JST SH 4-pin connector, also known under names
+  Qwiic (SparkFun) and Stemma QT (Adafruit).   You can use a Qwiic/Stemma QT
+  cable such as these ones (`1 <https://www.sparkfun.com/products/14427>`__,
+  `2 <https://www.adafruit.com/product/4210>`__) to connect any 3.3V I2C device 
+  with a compatible connector. You can also use an adapter cable such as
+  `this one <https://www.adafruit.com/product/4397>`__ for connecting other I2C devices.
+
 
 * **NeoPixel**. Roverwing uses JST PH 3-pin connector for the NeoPixel port.
   This is the same connector and same pin order as used by

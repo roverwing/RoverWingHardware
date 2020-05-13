@@ -38,15 +38,16 @@ microcontroller, and IMU.
 Note that 5V converter is capable of producing 4A output. Some of it is used by
 on-board electronics, leaving about 3.5A  available for  servos and NeoPixel LEDs.
 
-Power Indicators
+Indicator LEDs
 ================
 RoverWing contains two LED indicators. There is a small green LED next to the
 power connector; it lights up whenever RoverWing is powered.
 
-In addiiton,  RoverWing also  contains an internal small NeoPixel LED next to
+In addition,  RoverWing also  contains an internal small NeoPixel LED next to
 the servo port. Normally it blinks green (about 4 times per second) to indicate
-that RoverWing firmware is running.  If the battery voltage drops below
-preset limit, it turns red to warn the user. The battery level cutoff and
+that RoverWing firmware is running (except during the IMU calibration).
+If the battery voltage drops below
+preset limit, this LED  turns red to warn the user. The battery level cutoff and
 LED brightness  can be changed as described in |library-guide|.
 Other than that, the internal NeoPixel LED can not be controlled by  the user.
 
@@ -62,5 +63,5 @@ RoverWing contains a reset button next to the USB connector. Pressing this
 button resets both the RoverWing and the connected Feather board.
 
 Pressing the reset button twice puts the RoverWing in boot mode, used for
-uploading new firmware; this is indicated by dim red color of the NeoPixel LED.
-To exit the boot mode, press the reset button once. 
+uploading new firmware; in this mode, the internal  NeoPixel LED is dimmed.
+To exit the boot mode, press the reset button once.
