@@ -13,7 +13,7 @@ Parts included
 * Switch
 * Graphics Display
 * Headers
-* Standoffs: four 25-mm m3 palstic standoffs, four 6mm m3 standoffs, nuts and
+* Standoffs: four 22-mm m3 plastic standoffs, four 6mm m3 standoffs, nuts and
   screws
 
 

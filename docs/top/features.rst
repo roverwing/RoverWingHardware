@@ -7,7 +7,7 @@ Below is the list of features provided by RoverWing Top. Please see the
 sketches.
 
 * **Power switch**
-* **Reset button**. Pressing this button resets both the Featehr board and the
+* **Reset button**. Pressing this button resets both the Feather board and the
   RoverWing.
 * Two **buttons** that can be used for user input. These buttons are connected
   to two pins of the Feather board: button B is connected to the pin next to
@@ -24,7 +24,7 @@ sketches.
 
 .. warning::
 
-   If when using  RoverWing top, do not connect NeoPixels to the NeoPixel port of
+   When using  RoverWing top, do not connect NeoPixels to the NeoPixel port of
    the RoverWing board itself --- instead, use the port on the top.
 
 * A small **prototyping area**, providing connections for all the pins of
@@ -34,7 +34,8 @@ sketches.
   which can be used to  connect additional sensors and other peripherals.
   Each group of holes allows soldering either a one-row header with standard
   0.1" pitch (straight or 90 degree), or a 2mm pitch connector such as JST PH
-  or Grove.
+  or Grove. (The photo above shows a 6-pin 90 degree 0.1" header and a 4-pin
+  JST PH header on the left side of the board.) 
 
 
 .. note::

@@ -3743,15 +3743,15 @@ design rules under a new name.</description>
 <wire x1="-30.428" y1="-7.112" x2="-25.7302" y2="-7.112" width="0.254" layer="1"/>
 <via x="-28.956" y="4.572" extent="1-16" drill="0.35"/>
 <polygon width="0.0254" layer="1" thermals="no">
-<vertex x="-25.4" y="-6.858"/>
-<vertex x="-25.530075" y="-6.727925"/>
-<vertex x="-29.8613125" y="-6.781003125"/>
+<vertex x="-25.273" y="-6.985"/>
+<vertex x="-25.4046125" y="-6.8533875"/>
+<vertex x="-29.74246875" y="-6.906546875"/>
 <vertex x="-31.651875" y="-4.8895"/>
 <vertex x="-38.0365" y="-4.8895"/>
 <vertex x="-38.989" y="-5.842"/>
 <vertex x="-38.989" y="-9.652"/>
 <vertex x="-25.527" y="-9.652"/>
-<vertex x="-25.4" y="-9.525"/>
+<vertex x="-25.273" y="-9.398"/>
 </polygon>
 <via x="-29.972" y="-7.62" extent="1-16" drill="0.35"/>
 <via x="-29.972" y="-8.636" extent="1-16" drill="0.35"/>

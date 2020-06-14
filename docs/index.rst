@@ -1,7 +1,7 @@
 ===============
 RoverWing board
 ===============
-.. figure:: images/MainView.jpg
+.. figure:: images/MainView2020.jpg
     :alt: RoverWing
     :width: 80%
 
