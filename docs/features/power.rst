@@ -15,7 +15,12 @@ most popular connectors for LiPo batteries used for quadcopters and RC cars. See
 section :ref:`cables` for more information about available cables and adapters
 for connecting other types of batteries.
 
-Note that the RoverWing **can not be powered via USB cable**.
+Note that the RoverWing **can not be powered**  via USB cable plugged into
+the USB port on the board (this port is only used for updating firmware).
+Some components of RoverWing (namely, the microcontroller, the IMU, and analog
+inputs) can be powered from the attached Feather board, but for most  peripherals
+(motors, servos, sonars), the 3.3V provided by Feather is not enough and a 7-14V
+power source is necessary.
 
 .. warning::
 
@@ -36,7 +41,8 @@ in turn   provides power to  the Feather board (via 3.3V pin),  built-in
 microcontroller, and IMU.
 
 Note that 5V converter is capable of producing 4A output. Some of it is used by
-on-board electronics, leaving about 3.5A  available for  servos and NeoPixel LEDs.
+on-board electronics, leaving about 3.5A  available for  servos and NeoPixel
+LEDs.
 
 Indicator LEDs
 ================

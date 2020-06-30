@@ -33,9 +33,9 @@ sketches.
 * Holes for additional headers/connectors along the edge of the RoverWing top,
   which can be used to  connect additional sensors and other peripherals.
   Each group of holes allows soldering either a one-row header with standard
-  0.1" pitch (straight or 90 degree), or a 2mm pitch connector such as JST PH
-  or Grove. (The photo above shows a 6-pin 90 degree 0.1" header and a 4-pin
-  JST PH header on the left side of the board.) 
+  0.1" pitch (straight or right angle), or a 2mm pitch connector such as JST PH
+  or Grove. (The photo above shows a 6-pin right angle  0.1" header and a 4-pin
+  JST PH header on the left side of the board.)
 
 
 .. note::
