@@ -4857,7 +4857,7 @@ consumption by allowing the system processor to burst read sensor data and then 
 <part name="GND22" library="RoverWing-V1.5" deviceset="GND" device=""/>
 <part name="C19" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="100nF"/>
 <part name="C20" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="100nF"/>
-<part name="C21" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0805" value="1uF"/>
+<part name="C21" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="1uF"/>
 <part name="C14" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="100nF"/>
 <part name="C13" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="100nF"/>
 <part name="C12" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="100nF"/>
@@ -4916,6 +4916,7 @@ consumption by allowing the system processor to burst read sensor data and then 
 <part name="GND30" library="RoverWing-V1.5" deviceset="GND" device=""/>
 <part name="D3" library="RoverWing-V1.5" deviceset="SMD-DIODE-SCHOTTKY" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43452/2"/>
 <part name="GND3" library="RoverWing-V1.5" deviceset="GND" device=""/>
+<part name="C22" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -5091,9 +5092,9 @@ Alexander Kirillov</text>
 <instance part="R14" gate="G$1" x="119.38" y="7.62" smashed="yes">
 <attribute name="NAME" x="115.57" y="8.89" size="1.524" layer="95" font="vector" ratio="10"/>
 </instance>
-<instance part="C2" gate="G$1" x="208.28" y="165.1" smashed="yes">
-<attribute name="NAME" x="209.296" y="165.735" size="1.524" layer="95" ratio="10"/>
-<attribute name="VALUE" x="209.296" y="160.909" size="1.524" layer="96" ratio="10"/>
+<instance part="C2" gate="G$1" x="203.2" y="165.1" smashed="yes">
+<attribute name="NAME" x="204.216" y="165.735" size="1.524" layer="95" ratio="10"/>
+<attribute name="VALUE" x="204.216" y="160.909" size="1.524" layer="96" ratio="10"/>
 </instance>
 <instance part="U4" gate="G$1" x="203.2" y="78.74" smashed="yes">
 <attribute name="NAME" x="182.88" y="93.98" size="1.778" layer="95"/>
@@ -5172,6 +5173,10 @@ Alexander Kirillov</text>
 </instance>
 <instance part="GND3" gate="1" x="160.02" y="149.86" smashed="yes">
 <attribute name="VALUE" x="157.48" y="147.32" size="1.524" layer="96" ratio="10"/>
+</instance>
+<instance part="C22" gate="G$1" x="213.36" y="167.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="214.122" y="172.974" size="1.524" layer="95" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="214.376" y="165.1" size="1.524" layer="96" ratio="10" rot="R270"/>
 </instance>
 </instances>
 <busses>
@@ -5305,18 +5310,22 @@ Alexander Kirillov</text>
 <junction x="224.79" y="152.4"/>
 <pinref part="C21" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="193.04" y1="152.4" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="152.4" x2="224.79" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="152.4" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="152.4" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="152.4" x2="224.79" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="224.79" y1="162.56" x2="224.79" y2="152.4" width="0.1524" layer="91"/>
 <junction x="224.79" y="152.4"/>
 <wire x1="198.12" y1="152.4" x2="193.04" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <junction x="193.04" y="152.4"/>
 <wire x1="193.04" y1="152.4" x2="193.04" y2="150.622" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="160.02" x2="208.28" y2="152.4" width="0.1524" layer="91"/>
-<junction x="208.28" y="152.4"/>
+<wire x1="203.2" y1="160.02" x2="203.2" y2="152.4" width="0.1524" layer="91"/>
+<junction x="203.2" y="152.4"/>
 <wire x1="193.04" y1="152.4" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="152.4" x2="185.42" y2="153.67" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="213.36" y1="163.83" x2="213.36" y2="152.4" width="0.1524" layer="91"/>
+<junction x="213.36" y="152.4"/>
 </segment>
 <segment>
 <pinref part="GND26" gate="1" pin="GND"/>
@@ -5628,20 +5637,24 @@ Alexander Kirillov</text>
 <wire x1="185.42" y1="171.45" x2="185.42" y2="172.72" width="0.1524" layer="91"/>
 <junction x="185.42" y="172.72"/>
 <pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="208.28" y1="167.64" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="167.64" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="IN"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="171.45" x2="198.12" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="172.72" x2="215.9" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="172.72" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="172.72" x2="215.9" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="172.72" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="171.45" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
 <junction x="193.04" y="172.72"/>
-<wire x1="185.42" y1="172.72" x2="208.28" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="172.72" x2="203.2" y2="172.72" width="0.1524" layer="91"/>
 <label x="203.2" y="175.26" size="1.778" layer="95"/>
-<junction x="208.28" y="172.72"/>
-<wire x1="208.28" y1="172.72" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
+<junction x="203.2" y="172.72"/>
+<wire x1="203.2" y1="172.72" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
 <junction x="198.12" y="172.72"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="171.45" x2="213.36" y2="172.72" width="0.1524" layer="91"/>
+<junction x="213.36" y="172.72"/>
 </segment>
 </net>
 <net name="SERVO3" class="0">
