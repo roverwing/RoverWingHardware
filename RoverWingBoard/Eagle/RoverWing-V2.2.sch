@@ -4914,7 +4914,7 @@ consumption by allowing the system processor to burst read sensor data and then 
 <part name="C9" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="22pF"/>
 <part name="R1" library="RoverWing-V1.5" deviceset="RES-SMD-0603" device="" value="37.4K"/>
 <part name="GND30" library="RoverWing-V1.5" deviceset="GND" device=""/>
-<part name="D3" library="RoverWing-V1.5" deviceset="SMD-DIODE-SCHOTTKY" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43452/2"/>
+<part name="D3" library="RoverWing-V1.5" deviceset="SMD-DIODE-SCHOTTKY" device="DO-214AC" package3d_urn="urn:adsk.eagle:package:43452/2" value="CDBA540-HF"/>
 <part name="GND3" library="RoverWing-V1.5" deviceset="GND" device=""/>
 <part name="C22" library="RoverWing-V1.5" deviceset="CAP-CERAMIC-SMD" device="0603" value="1uF"/>
 </parts>
