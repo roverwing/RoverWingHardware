@@ -6,7 +6,8 @@ The RoverWing provides connections for two brushed DC motors, at the same
 voltage as the main power supply (7-14V). You can also use motors rated for
 lower voltage and limit the power in software: for example, you can use 6V
 motors with 7.4V power supply by limiting the maximal output power to 80%. Each
-motor is controlled by DRV8871 motor driver by Texas Instruments, which can
+motor is controlled by `DRV8871 motor driver <https://www.ti.com/product/DRV8871>`__
+by Texas Instruments, which can
 provide up to 2.9A per motor. The drivers are current limited, so the current
 will not exceed 2.9A even if the motor is stalled, which helps prevent driver
 overheating.  The motor ports use JST VH connectors; see section
