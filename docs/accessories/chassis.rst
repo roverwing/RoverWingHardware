@@ -9,7 +9,8 @@ power in software.
 
 Below are some of the chassis we recommend:
 
-* **Adafruit's Mini Robot Rover Chassis**: https://www.adafruit.com/product/2939.
+* **Adafruit's Mini Robot Rover Chassis**: https://www.adafruit.com/product/2939
+  or https://www.adafruit.com/product/3216. 
   Cheap, small, and nimble.
 
 * **Pololu's Romi Chassis**: https://www.pololu.com/category/202/romi-chassis-and-accessories.
