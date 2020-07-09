@@ -3,7 +3,7 @@
 =======================
 Feather Board Connector
 =======================
-RoverWing can not be used without a Feather board. You can use any Feather
+RoverWing  must  be used with a Feather board. You can use any Feather
 board from Adafruit, or any 3rd party board that meets
 `Adafruit's specifications <https://learn.adafruit.com/adafruit-feather/feather-specification>`_.
 To connect the Feather board, plug it in the dual row female headers at the

@@ -8,14 +8,15 @@ Below is the list of suggested cables and places to buy them.
 * **Power**. RoverWing board uses XT30 connector for main power; the  same
   connector is  used
   by REV Robotics Expansion hub used in First Tech Challenge competition. In
-  addition, and adapter cable is included, allowing you to use a battery with
+  addition, an adapter cable is included, allowing you to use a battery with
   the XT60 connector, popular among quadcopter and RC car enthusiasts. If you
   have a battery with a different connector (Dean's, 2.1mm barrel, Anderson
   Power Poles), try searching for an adapter cable on Amazon or Banggood.
   We recommend using 18 gauge or larger cables for 12 V power supply.
 
-* **Motor cables**. RoverWing uses JST VH connectors. You can buy
-  JST VH 2-pin cables from many sources, including
+* **Motor cables**. RoverWing uses JST VH connectors. Two motor cables (JST VH
+  to bare wire, 22 AWG) are included with the board. If you need longer or
+  higher current cables, you can buy JST VH 2-pin cables from many sources, including
 
   - `REV Robotics <http://www.revrobotics.com/ftc/electronics/cables>`__
     (JST VH - JST VH, JST VH to Anderson PowerPole).
@@ -39,7 +40,7 @@ Below is the list of suggested cables and places to buy them.
 * **I2C port**. RoverWing uses JST SH 4-pin connector, also known under names
   Qwiic (SparkFun) and Stemma QT (Adafruit).   You can use a Qwiic/Stemma QT
   cable such as these ones (`1 <https://www.sparkfun.com/products/14427>`__,
-  `2 <https://www.adafruit.com/product/4210>`__) to connect any 3.3V I2C device 
+  `2 <https://www.adafruit.com/product/4210>`__) to connect any 3.3V I2C device
   with a compatible connector. You can also use an adapter cable such as
   `this one <https://www.adafruit.com/product/4397>`__ for connecting other I2C devices.
 

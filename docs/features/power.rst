@@ -1,5 +1,5 @@
 ===============
-Power and Reset
+Power And Reset
 ===============
 
 Power Source
@@ -69,5 +69,7 @@ RoverWing contains a reset button next to the USB connector. Pressing this
 button resets both the RoverWing and the connected Feather board.
 
 Pressing the reset button twice puts the RoverWing in boot mode, used for
-uploading new firmware; in this mode, the internal  NeoPixel LED is dimmed.
-To exit the boot mode, press the reset button once.
+uploading new firmware as described
+`here <https://github.com/roverwing/RoverWingFirmware>`__; in this mode, the
+internal  NeoPixel LED is dimmed. To exit the boot mode, press the reset button
+once.

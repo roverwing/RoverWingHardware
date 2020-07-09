@@ -40,16 +40,18 @@ Below is the list of key features of the RoverWing:
   - **Motors**: two brushed DC motors, at up to 2.9A at 14V per motor
   - **Quadrature encoders** for each motor
   - **Sonars**: support for three HC-SR04 or compatible ultrasonic sensors (sonars)
-  - **Servos**: four servos (5V) (see note on power limit below)
+  - **Servos**: four servos (5V)
   - Six **analog inputs** (3.3V maximum)
-  - **Neopixel** smart LED (see note on power limit below)
+  - **Neopixel** smart LED strips
   - **GPS  sensor**
   - one additional **I2C port**
 
-The RoverWing uses same connectors for power supply, motors, encoders, and I2C
+The RoverWing uses same connectors for power supply, motors, and encoders
 as the `REV Robotics Expansion hub <http://www.revrobotics.com/rev-31-1153>`__
 used in `First Tech Challenge <https://www.firstinspires.org/robotics/ftc>`__
-robotics competition, so it can be easily used with the same motors and sensors.
+robotics competition, so it can be easily used with the same motors. The I2C
+port uses Qwiic/Stemma QT connector, making it easy to connect additional
+sensors from Sparkfun or Adafruit.
 
 
 .. toctree::
