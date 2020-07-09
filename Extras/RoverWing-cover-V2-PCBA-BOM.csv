@@ -1,0 +1,17 @@
+Order list for /Users/davidbershadsky/Documents/Roverwing/RoverWingHardware/Extras/RoverWing-cover-V2.0.sch
+Exported from EAGLE with DesignLink
+
+Quantity	Value	Package	Order code	Manufacturer	Manuf. Code	Availability	Price (from)	Description
+3	0.1uF	C0805	96Y8186	AVX	04025C104KAT2A	9540	0.131	AVX - 04025C104KAT2A - SMD Multilayer Ceramic Capacitor, 0.1 &#181;F, 50 V, 0402 [1005 Metric], &#177; 10%, X7R
+1	FRAME-LETTERNO_PACKAGE	DUMMY	unknown					
+1	HEADER-PH-3PSIDEENTRY	S3B-PH-K	38K8070	JST (JAPAN SOLDERLESS TERMINALS)	S3B-PH-K-S (LF)(SN)	7505	0.075	JST (JAPAN SOLDERLESS TERMINALS) - S3B-PH-K-S (LF)(SN) - Pin Header, Wire-to-Board, 2 mm, 1 Rows, 3 Contacts, Through Hole, PH Series
+1		1X04	unknown					
+1		1X12_NO_SILK	unknown					
+1		1X16_NO_SILK	unknown					
+4	HEADER-PH-6PSIDEENTRY	S6B-PH-K	unknown					
+8		1X06_NO_SILK	unknown					
+1	FEATHERWING_NODIM	FEATHERWING_DIM	unknown					
+17		1X07_NO_SILK	unknown					
+3		LED3535	77Y5297	ADAFRUIT	2659	0	49.5	ADAFRUIT - 2659 - NEOPIXEL MINI 3535 RGB LEDS W/ INTEGRATED DRIVER CHIP - WHITE - PACK OF 10
+3	SW-TACTILE-4.5X4.5_SMD	TL3305	84Y2774	E-SWITCH	TL3305AF160QG	2716	0.126	E-SWITCH - TL3305AF160QG - Tactile Switch, Ultraminiature, TL3305 Series, Top Actuated, Surface Mount, Round Button, 160 gf
+8	MOUNTINGHOLE3.0_NPH	MOUNTINGHOLE_3.0_NPH	unknown					
