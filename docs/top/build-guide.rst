@@ -46,7 +46,7 @@ Assembly steps
    switch into the opening of the top as shown in the photo below. Pay attention
    to orientation of  the switch .
 
-.. figure:: images/switch-insert.jpg
+.. figure:: ../../images/switch-insert.jpg
    :alt: Soldering power wires to the switch
    :width: 60%
 
