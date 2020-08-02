@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
@@ -1007,129 +1007,304 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J16" library="RoverWing-cover-V1.6" package="FEATHERWING_DIM" value="FEATHERWING_NODIM" x="11.43" y="-25.4" smashed="yes" rot="R90"/>
+<element name="J16" library="RoverWing-cover-V1.6" package="FEATHERWING_DIM" value="FEATHERWING_NODIM" x="11.43" y="-25.4" smashed="yes" rot="R90">
+<attribute name="MF" value="" x="11.43" y="-25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="11.43" y="-25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="11.43" y="-25.4" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 <element name="FRAME2" library="SparkFun-Aesthetics" package="DUMMY" value="FRAME-LETTERNO_PACKAGE" x="37.211" y="41.529" smashed="yes">
 <attribute name="DESIGNER" value="Nobody" x="36.195" y="87.122" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="" x="37.211" y="41.529" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="37.211" y="41.529" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="37.211" y="41.529" size="1.778" layer="27" display="off"/>
 <attribute name="VERSION" value="v01" x="36.195" y="87.122" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$3" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-16.129" y="-37.719" smashed="yes"/>
-<element name="U$4" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="16.129" y="-37.719" smashed="yes"/>
-<element name="U$14" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-37.719" y="-16.129" smashed="yes"/>
-<element name="U$15" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-37.719" y="16.129" smashed="yes"/>
-<element name="U$24" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="37.719" y="-16.129" smashed="yes"/>
-<element name="U$25" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="37.719" y="16.129" smashed="yes"/>
-<element name="U$26" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-16.129" y="37.719" smashed="yes"/>
-<element name="U$27" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="16.129" y="37.719" smashed="yes"/>
+<element name="U$3" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-16.129" y="-37.719" smashed="yes">
+<attribute name="MF" value="" x="-16.129" y="-37.719" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-16.129" y="-37.719" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-16.129" y="-37.719" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$4" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="16.129" y="-37.719" smashed="yes">
+<attribute name="MF" value="" x="16.129" y="-37.719" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="16.129" y="-37.719" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="16.129" y="-37.719" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$14" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-37.719" y="-16.129" smashed="yes">
+<attribute name="MF" value="" x="-37.719" y="-16.129" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-37.719" y="-16.129" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-37.719" y="-16.129" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$15" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-37.719" y="16.129" smashed="yes">
+<attribute name="MF" value="" x="-37.719" y="16.129" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-37.719" y="16.129" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-37.719" y="16.129" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$24" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="37.719" y="-16.129" smashed="yes">
+<attribute name="MF" value="" x="37.719" y="-16.129" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="37.719" y="-16.129" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="37.719" y="-16.129" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$25" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="37.719" y="16.129" smashed="yes">
+<attribute name="MF" value="" x="37.719" y="16.129" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="37.719" y="16.129" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="37.719" y="16.129" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$26" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="-16.129" y="37.719" smashed="yes">
+<attribute name="MF" value="" x="-16.129" y="37.719" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-16.129" y="37.719" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-16.129" y="37.719" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$27" library="CrickitCopy" package="MOUNTINGHOLE_3.0_NPH" value="MOUNTINGHOLE3.0_NPH" x="16.129" y="37.719" smashed="yes">
+<attribute name="MF" value="" x="16.129" y="37.719" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="16.129" y="37.719" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="16.129" y="37.719" size="1.778" layer="27" display="off"/>
+</element>
 <element name="LED1" library="RoverWing-V1.5" package="LED3535" value="" x="35.56" y="-7.62" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Worldsemi" x="35.56" y="-7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="ADAFRUIT" x="35.56" y="-7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="2659" x="35.56" y="-7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="77Y5297" x="35.56" y="-7.62" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNO" value="WS2812B-3535 " x="35.56" y="-7.62" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LED2" library="RoverWing-V1.5" package="LED3535" value="" x="35.56" y="0" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Worldsemi" x="35.56" y="0" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="ADAFRUIT" x="35.56" y="0" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="2659" x="35.56" y="0" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="77Y5297" x="35.56" y="0" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNO" value="WS2812B-3535 " x="35.56" y="0" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LED3" library="RoverWing-V1.5" package="LED3535" value="" x="35.56" y="7.62" smashed="yes" rot="R90">
 <attribute name="MANUFACTURER" value="Worldsemi" x="35.56" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="ADAFRUIT" x="35.56" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="2659" x="35.56" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="77Y5297" x="35.56" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PARTNO" value="WS2812B-3535 " x="35.56" y="7.62" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="S2" library="RoverWing" package="TL3305" value="SW-TACTILE-4.5X4.5_SMD" x="6.35" y="30.48" smashed="yes" rot="R90"/>
-<element name="S3" library="RoverWing" package="TL3305" value="SW-TACTILE-4.5X4.5_SMD" x="-6.35" y="30.48" smashed="yes" rot="R90"/>
-<element name="C1" library="RoverWing" package="C0805" value="0.1uF" x="31.623" y="-7.62" smashed="yes" rot="R180"/>
-<element name="C3" library="RoverWing" package="C0805" value="0.1uF" x="31.369" y="7.62" smashed="yes" rot="R180"/>
-<element name="C2" library="RoverWing" package="C0805" value="0.1uF" x="31.623" y="0" smashed="yes" rot="R180"/>
+<element name="S2" library="RoverWing" package="TL3305" value="SW-TACTILE-4.5X4.5_SMD" x="6.35" y="30.48" smashed="yes" rot="R90">
+<attribute name="MF" value="E-SWITCH" x="6.35" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="TL3305AF160QG" x="6.35" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="84Y2774" x="6.35" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="S3" library="RoverWing" package="TL3305" value="SW-TACTILE-4.5X4.5_SMD" x="-6.35" y="30.48" smashed="yes" rot="R90">
+<attribute name="MF" value="E-SWITCH" x="-6.35" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="TL3305AF160QG" x="-6.35" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="84Y2774" x="-6.35" y="30.48" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C1" library="RoverWing" package="C0805" value="0.1uF" x="31.623" y="-7.62" smashed="yes" rot="R180">
+<attribute name="MF" value="AVX" x="31.623" y="-7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="04025C104KAT2A" x="31.623" y="-7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="96Y8186" x="31.623" y="-7.62" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C3" library="RoverWing" package="C0805" value="0.1uF" x="31.369" y="7.62" smashed="yes" rot="R180">
+<attribute name="MF" value="AVX" x="31.369" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="04025C104KAT2A" x="31.369" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="96Y8186" x="31.369" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C2" library="RoverWing" package="C0805" value="0.1uF" x="31.623" y="0" smashed="yes" rot="R180">
+<attribute name="MF" value="AVX" x="31.623" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="04025C104KAT2A" x="31.623" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="96Y8186" x="31.623" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="J2" library="SparkFun-Connectors" package="1X04" value="" x="19.05" y="19.05" smashed="yes">
+<attribute name="MF" value="" x="19.05" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="19.05" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="19.05" y="19.05" size="1.778" layer="27" display="off"/>
 <attribute name="PROD_ID" value="CONN-09696" x="19.05" y="19.05" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="17.78" y="17.018" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J3" library="SparkFun-Connectors" package="1X12_NO_SILK" value="" x="-12.7" y="-8.89" smashed="yes" rot="R90">
+<attribute name="MF" value="" x="-12.7" y="-8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="" x="-12.7" y="-8.89" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-12.7" y="-8.89" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-10.668" y="-10.16" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
 <element name="J4" library="SparkFun-Connectors" package="1X16_NO_SILK" value="" x="12.7" y="19.05" smashed="yes" rot="R270">
+<attribute name="MF" value="" x="12.7" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="12.7" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="12.7" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="10.668" y="20.32" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J102" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="19.05" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="19.05" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="17.018" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J103" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="16.51" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="16.51" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="16.51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="14.478" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J104" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="13.97" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="13.97" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="13.97" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="11.938" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J105" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="11.43" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="11.43" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="9.398" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J106" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="8.89" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="8.89" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="6.858" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J107" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="6.35" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="6.35" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="4.318" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J108" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="3.81" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="3.81" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="3.81" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="1.778" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J109" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="1.27" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="1.27" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="1.27" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J110" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-1.27" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-1.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-1.27" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-1.27" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J111" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-3.81" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-3.81" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-3.81" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-3.81" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-5.842" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J112" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-6.35" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-6.35" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-6.35" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-8.382" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J113" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-8.89" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-8.89" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-8.89" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-10.922" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J114" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-11.43" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-11.43" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-11.43" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-11.43" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-13.462" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J115" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-13.97" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-13.97" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-13.97" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-16.002" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J116" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-16.51" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-16.51" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-16.51" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-18.542" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J101" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="21.59" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="19.558" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J117" library="SparkFun-Connectors" package="1X07_NO_SILK" value="" x="-7.62" y="-19.05" smashed="yes">
+<attribute name="MF" value="" x="-7.62" y="-19.05" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-7.62" y="-19.05" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-7.62" y="-19.05" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-8.89" y="-21.082" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J1" library="RoverWing" package="S3B-PH-K" value="HEADER-PH-3PSIDEENTRY" x="21.441209375" y="27.686" smashed="yes" rot="R315">
+<attribute name="MF" value="JST (JAPAN SOLDERLESS TERMINALS)" x="21.441209375" y="27.686" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="S3B-PH-K-S (LF)(SN)" x="21.441209375" y="27.686" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_NEWARK" value="38K8070" x="21.441209375" y="27.686" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="PARTNO" value="S3B-PH-K-S(LF)(SN)" x="21.441209375" y="27.686" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
 <element name="J7" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="-24.6688125" y="-17.06376875" smashed="yes" rot="R315">
+<attribute name="MF" value="" x="-24.6688125" y="-17.06376875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="" x="-24.6688125" y="-17.06376875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-24.6688125" y="-17.06376875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="VALUE" x="-27.00368125" y="-17.602584375" size="0.6096" layer="27" font="vector" ratio="20" rot="R315"/>
 </element>
 <element name="J8" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="-26.464865625" y="-18.85981875" smashed="yes" rot="R315">
+<attribute name="MF" value="" x="-26.464865625" y="-18.85981875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="" x="-26.464865625" y="-18.85981875" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-26.464865625" y="-18.85981875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="VALUE" x="-28.79973125" y="-19.398634375" size="0.6096" layer="27" font="vector" ratio="20" rot="R315"/>
 </element>
-<element name="J5" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="-23.69639375" y="-25.071603125" smashed="yes" rot="R135"/>
+<element name="J5" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="-23.69639375" y="-25.071603125" smashed="yes" rot="R135">
+<attribute name="MF" value="" x="-23.69639375" y="-25.071603125" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="MPN" value="" x="-23.69639375" y="-25.071603125" size="1.778" layer="27" rot="R135" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-23.69639375" y="-25.071603125" size="1.778" layer="27" rot="R135" display="off"/>
+</element>
 <element name="J6" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="14.60345" y="-27.183284375" smashed="yes" rot="R45">
+<attribute name="MF" value="" x="14.60345" y="-27.183284375" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="MPN" value="" x="14.60345" y="-27.183284375" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="14.60345" y="-27.183284375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="VALUE" x="15.142265625" y="-29.518153125" size="0.6096" layer="27" font="vector" ratio="20" rot="R45"/>
 </element>
 <element name="J9" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="16.3995" y="-28.9793375" smashed="yes" rot="R45">
+<attribute name="MF" value="" x="16.3995" y="-28.9793375" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="MPN" value="" x="16.3995" y="-28.9793375" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="16.3995" y="-28.9793375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="VALUE" x="16.938315625" y="-31.314203125" size="0.6096" layer="27" font="vector" ratio="20" rot="R45"/>
 </element>
-<element name="J10" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="22.711209375" y="-26.459578125" smashed="yes" rot="R225"/>
+<element name="J10" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="22.711209375" y="-26.459578125" smashed="yes" rot="R225">
+<attribute name="MF" value="" x="22.711209375" y="-26.459578125" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="" x="22.711209375" y="-26.459578125" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="22.711209375" y="-26.459578125" size="1.778" layer="27" rot="R225" display="off"/>
+</element>
 <element name="J11" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="-13.556634375" y="28.27368125" smashed="yes" rot="R225">
+<attribute name="MF" value="" x="-13.556634375" y="28.27368125" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="" x="-13.556634375" y="28.27368125" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-13.556634375" y="28.27368125" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="VALUE" x="-14.09545" y="30.608546875" size="0.6096" layer="27" font="vector" ratio="20" rot="R225"/>
 </element>
 <element name="J12" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="-15.352684375" y="30.06973125" smashed="yes" rot="R225">
+<attribute name="MF" value="" x="-15.352684375" y="30.06973125" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="MPN" value="" x="-15.352684375" y="30.06973125" size="1.778" layer="27" rot="R225" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-15.352684375" y="30.06973125" size="1.778" layer="27" rot="R225" display="off"/>
 <attribute name="VALUE" x="-15.8915" y="32.404596875" size="0.6096" layer="27" font="vector" ratio="20" rot="R225"/>
 </element>
-<element name="J13" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="-21.638865625" y="27.37565625" smashed="yes" rot="R45"/>
-<element name="S1" library="RoverWing" package="TL3305" value="SW-TACTILE-4.5X4.5_SMD" x="-10.16" y="-30.48" smashed="yes" rot="R270"/>
+<element name="J13" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="-21.638865625" y="27.37565625" smashed="yes" rot="R45">
+<attribute name="MF" value="" x="-21.638865625" y="27.37565625" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="MPN" value="" x="-21.638865625" y="27.37565625" size="1.778" layer="27" rot="R45" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-21.638865625" y="27.37565625" size="1.778" layer="27" rot="R45" display="off"/>
+</element>
+<element name="S1" library="RoverWing" package="TL3305" value="SW-TACTILE-4.5X4.5_SMD" x="-10.16" y="-30.48" smashed="yes" rot="R270">
+<attribute name="MF" value="E-SWITCH" x="-10.16" y="-30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="TL3305AF160QG" x="-10.16" y="-30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="OC_NEWARK" value="84Y2774" x="-10.16" y="-30.48" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="J14" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="-4.064" y="-29.21" smashed="yes">
+<attribute name="MF" value="" x="-4.064" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-4.064" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-4.064" y="-29.21" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-5.334" y="-31.242" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J15" library="SparkFun-Connectors" package="1X06_NO_SILK" value="" x="-4.064" y="-31.75" smashed="yes">
+<attribute name="MF" value="" x="-4.064" y="-31.75" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="-4.064" y="-31.75" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="-4.064" y="-31.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-5.334" y="-33.782" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="J17" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="2.286" y="-34.29" smashed="yes" rot="R180"/>
+<element name="J17" library="RoverWing" package="S6B-PH-K" value="HEADER-PH-6PSIDEENTRY" x="2.286" y="-34.29" smashed="yes" rot="R180">
+<attribute name="MF" value="" x="2.286" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="2.286" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="2.286" y="-34.29" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
