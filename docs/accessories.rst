@@ -1,8 +1,8 @@
 ===========
 Accessories
 ===========
-Here are some accessories for the  RoverWing board. If you bought your board on
-Kickstarter, please note that these accessories are not included.
+Here are some accessories for the  RoverWing board. These accessories are not
+included -- you will need to purchase them separately.  
 
 .. toctree::
     :caption: Accessories

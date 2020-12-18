@@ -2,6 +2,14 @@
 RoverWing Top Features
 =========================
 
+
+.. figure:: ../images/top2020.jpg
+    :alt: RoverWing with top
+    :width: 60%
+
+    RoverWing board with the top attached.
+
+
 Below is the list of features provided by RoverWing Top. Please see the
 |library-guide| for information on accessing and using these features in your
 sketches.
