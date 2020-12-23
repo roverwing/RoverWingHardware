@@ -27,7 +27,7 @@ bool Pass;
 bool Fail;
 bool sonartemp;
 float analogconstant = 3.23;
-float sonarconstant = 10;
+int sonarconstant[] = {65, 90, 37};
 bool done = false;
 
 void setup() {
@@ -77,9 +77,12 @@ void setup() {
   r.setServoRange(SERVO3, 900, 2100);
   r.setServoRange(SERVO4, 900, 2100);
   r.setAllServo(servoPos);
+
+  r.activateSonars(SONAR1 + SONAR2 + SONAR3, 3000);
 }
 
 void loop() {
+
   r.stopMotors();
   r.resetAllEncoder();
   if (Testing == true) {
@@ -97,7 +100,7 @@ void loop() {
       Serial.print(r.analog[i]); //note that index i runs 1..6, not 0..5 !
       // values of analog[i] are floats, representing
       // the voltage; they range 0 - 3.3 volts
-      if (r.analog[i] == analogconstant) {
+      if (abs(r.analog[i] - 3.23) <= .02) {
         analogpass = true;
         digitalWrite(13, HIGH);
         r.setPixelColor(1, WHITE);
@@ -170,18 +173,27 @@ void loop() {
     Serial.print("Yaw: "); Serial. print(r.getYaw());  Serial.print(" ");
     Serial.print("Pitch: "); Serial. print(r.getPitch());  Serial.print(" ");
     Serial.print("Roll: "); Serial. print(r.getRoll());  Serial.println(" ");
-
+    bool motorpasstemp = true;
     float yaw1 = r.getYaw();
+    int motortesttimer = millis();
     while (r.getPosition(MOTOR1) < 10) {
       r.setMotorPwr(MOTOR1, 1.0);
       Serial.println(r.getPosition(MOTOR1));
     }
+    if (millis() - motortesttimer >=  10000) {
+      motorpasstemp = false;
+    }
     r.setMotorPwr(MOTOR1, 0);
     float yaw2 = r.getYaw();
+    motortesttimer = millis();
     while (r.getPosition(MOTOR1) > 0) {
       r.setMotorPwr(MOTOR1, -1.0);
       Serial.println(r.getPosition(MOTOR1));
     }
+    if (millis() - motortesttimer >=  10000) {
+      motorpasstemp = false;
+    }
+    motortesttimer = millis();
     r.setMotorPwr(MOTOR1, 0);
     float yaw3 = r.getYaw();
     delay(1000);
@@ -190,21 +202,22 @@ void loop() {
       r.setMotorPwr(MOTOR2, 1.0);
       Serial.println(r.getPosition(MOTOR2));
     }
+    if (millis() - motortesttimer >=  10000) {
+      motorpasstemp = false;
+    }
+    motortesttimer = millis();
     r.setMotorPwr(MOTOR2, 0);
     float roll_2 = r.getRoll();
     while (r.getPosition(MOTOR2) > 0) {
       r.setMotorPwr(MOTOR2, -1.0);
       Serial.println(r.getPosition(MOTOR2));
     }
+    if (millis() - motortesttimer >=  10000) {
+      motorpasstemp = false;
+    }
     r.setMotorPwr(MOTOR2, 0);
-    float roll_3 = r.getRoll();
-    //    r.setMotorPwr(MOTOR1, 1);
-    //    r.setMotorPwr(MOTOR2, 1);
-    //    delay(2000);
-    //    r.setMotorPwr(MOTOR1, 0);
-    //    r.setMotorPwr(MOTOR2, 0);
-    //    delay(2000);
-    if (abs(yaw1 - yaw3) < 5 && abs(roll_1 - roll_3) < 5 && yaw2 > 85 &&  roll_2 > 85) {
+
+    if (motorpasstemp == true) {
       motorpass = true;
       digitalWrite(10, HIGH);
       r.setPixelColor(1, WHITE);
@@ -230,16 +243,18 @@ void loop() {
     for (int i = 0; i < 3; i++) {
       Serial.print("  ");
       Serial.print(r.sonar[i]); // values of sonar[i] are floats, representing
-      if (abs(r.sonar[i] - sonarconstant) < 10) {
-        sonartemp = false;
+      if (abs(r.sonar[i] - (float)sonarconstant[i]) < 10 && i != 2) {
+        sonartemp = true;
+      }
+      else if (i == 2 && abs(r.sonar[i] - (float)sonarconstant[i]) >= 10) {
+        sonartemp = true;
       }
       else {
-        sonartemp = true;
+        sonartemp = false;
         r.setPixelColor(1, RED);
         delay(500);
       }
     }
-
     if (sonartemp == true) {
       sonarpass = true;
       digitalWrite(9, HIGH);
@@ -272,6 +287,7 @@ void loop() {
     r.setPixelColor(1, YELLOW);
     delay(500);
     neopass = true;
+    digitalWrite(6, HIGH);
 
 
     digitalWrite(LED_BUILTIN, blink);
