@@ -4,7 +4,6 @@
 RoverWing Top Assembly
 ===========================
 
-(Work in progress - at the moment it is just a draft).
 
 Parts included
 --------------
@@ -22,13 +21,14 @@ Assembly steps
 .. warning::
    Before beginning the assembly process, disconnect the battery from the
    RoverWing. You should also disconnect the
-   battery every time you are removing the RoverWing Top.
+   battery every time you are removing the RoverWing Top. Just turning the
+   switch off is not enough!!
 
 
 
 1. Take the XT30-XT60 power cable which comes with RoverWing and cut the **red**
    wire about 5cm (2in) away from the XT30 connector. Strip about 5mm (slightly
-   less than 1/4") of wire on both sides oof the cut.
+   less than 1/4") of wire on both sides of the cut.
 
 2. Tightly twist the stripped wire, insert in the  holes in the switch terminals,
    and solder, as shown in the photo below. Please pay attention to details:
@@ -47,22 +47,39 @@ Assembly steps
    to orientation of  the switch .
 
 .. figure:: images/switch-inserted.jpg
-   :alt: Soldering power wires to the switch
+   :alt: Inserting switch in top board
    :width: 60%
 
    Inserting the switch in the RoverWing top.
 
 
-4. Attach the standoffs to the RoverWing board.
+4. Attach the m3 standoffs to the RoverWing board.
+
+.. figure:: images/board-standoffs.jpg
+   :alt: Attaching standoffs
+   :width: 60%
+
+   Attaching standoffs
 
 5. Insert the long  male headers into the outer rows of female headers in the
    center of the RoverWing board
 
 6. Plug  the Feather board into RoverWing;  reattach peripherals as necessary.
 
+.. figure:: images/board-headers.jpg
+   :alt: Board with feather and headers
+   :width: 60%
+
+   RoverWing with Feather board and headers
+
+
 7. Plug the XT30 end of the power cable into XT30 adapter on the RoverWing board.
 
-8. Place the RoverWing Top on top of the Roverwing,  making sure that the
-   headers are properly aligned. Tighten the standoff nuts.
+8. Place the RoverWing Top on top of the Roverwing,  **making sure that the
+   headers are properly aligned**.  You might need to slightly bend the wires coming
+   out of the XT30 connector.
 
-9. Reconnect the battery
+   Tighten the standoff nuts.
+
+9. Double-check that the top board is correctly plugged into the headers.
+   Reconnect the battery
