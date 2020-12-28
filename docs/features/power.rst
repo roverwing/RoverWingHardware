@@ -2,6 +2,12 @@
 Power And Reset
 ===============
 
+.. figure:: ../images/features-power.png
+    :alt: Power connectors
+    :width: 100%
+
+    RoverWing power and reset connectors
+
 Power Source
 ============
 The board can be powered by a 7-14V DC power supply such as 2 or 3 cell LiPO
