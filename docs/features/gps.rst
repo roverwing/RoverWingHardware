@@ -1,6 +1,13 @@
 ====
 GPS
 ====
+.. figure:: ../images/features-gps.png
+    :alt: GPS connector
+    :width: 100%
+
+    RoverWing GPS connector
+
+
 RoverWing provides a connector for an external GPS
 sensor. It uses the same connector (Hirose DF13 6-pin) and pinout as the
 popular `Pixhawk flight controller board <http://ardupilot.org/copter/docs/common-pixhawk-overview.html>`_  used in

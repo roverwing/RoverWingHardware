@@ -1,6 +1,14 @@
 ====================
 I2C Port
 ====================
+
+.. figure:: ../images/features-i2c.png
+    :alt: I2C connector`
+    :width: 100%
+
+    RoverWing I2C  connector
+
+
 RoverWing has a  port for connecting additional I2C devices. This port is
 connected to the I2C bus of the Feather board and thus is controlled directly
 by the Feather. The port uses JST SH4 connector, also known as Qwiic (SparkFun)

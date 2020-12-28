@@ -3,12 +3,20 @@
 ========
 NeoPixel
 ========
+
+.. figure:: ../images/features-neopixel.png
+    :alt: NeoPixel connector
+    :width: 100%
+
+    RoverWing NeoPixel connector
+
+
 RoverWing allows connecting a strip of "smart" LEDs, using WS2812b or SK6812
 chips. These LEDs, commonly called "NeoPixels", contain small chips which make
 them individually addressable: you can independently set colors of different
 LEDs using just one data line. You can read more about them in
 Adafruit's Uberguide: https://learn.adafruit.com/adafruit-neopixel-uberguide.
-Note that RoverWing only allows the RGB NeoPixels; RGB W NeoPixels, which add
+Note that RoverWing only allows the RGB NeoPixels; RGB **W** NeoPixels, which add
 white LED to the usual RGB, are not supported.
 
 RoverWing NeoPixel port uses JST PH3 connector, with the same pin order as

@@ -1,6 +1,14 @@
 ======
 Sonars
 ======
+
+.. figure:: ../images/features-sonar.png
+    :alt: Sonar connectors
+    :width: 100%
+
+    RoverWing Sonar connectors
+
+
 RoverWing provides connections for three ultrasonic distance sensors (HC-SR04 or
 compatible). These sonar sensors are very popular with hobby robot builders due
 to their low price  (about $2.50/piece) and reliability. Note that these sonars

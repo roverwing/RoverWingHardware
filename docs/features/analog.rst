@@ -1,6 +1,12 @@
 =============
 Analog Inputs
 =============
+.. figure:: ../images/features-analog.png
+    :alt: analog inputs
+    :width: 100%
+
+    RoverWing analog inputs
+
 RoverWing provides connectors for 6 analog sensors, together with 3.3V power and
 ground connectors, using a 10-bit analog-to-digital converter.
 Note that the analog signal should not exceed 3.3V, otherwise

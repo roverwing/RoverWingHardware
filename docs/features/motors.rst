@@ -1,6 +1,11 @@
 ===================
 Motors And Encoders
 ===================
+.. figure:: ../images/features-motors.png
+    :alt: Motors
+    :width: 100%
+
+    RoverWing motor connectors
 
 The RoverWing provides connections for two brushed DC motors, at the same
 voltage as the main power supply (7-14V). You can also use motors rated for

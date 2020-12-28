@@ -1,6 +1,13 @@
 ============================
 Microcontroller And Firmware
 ============================
+
+.. figure:: ../images/features-mcu.png
+    :alt: Microcontroller
+    :width: 100%
+
+
+
 The brains of the board is the SAMD21G microcontroller, using the 32-bit
 ARM® Cortex®-M0+ processor (the same MCU is used by
 Arduino ZERO and Adafruit Feather M0 boards). It comes preloaded with firmware;

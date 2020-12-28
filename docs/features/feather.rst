@@ -3,6 +3,14 @@
 =======================
 Feather Board Connector
 =======================
+
+.. figure:: ../images/MainView-with-Feather.jpg
+    :alt: RoverWing with Feather
+    :width: 80%
+
+    RoverWing with a plugged in Feather (ESP32)
+
+
 RoverWing  must  be used with a Feather board. You can use any Feather
 board from Adafruit, or any 3rd party board that meets
 `Adafruit's specifications <https://learn.adafruit.com/adafruit-feather/feather-specification>`_.

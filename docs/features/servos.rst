@@ -1,8 +1,14 @@
 ======
 Servos
 ======
+.. figure:: ../images/features-servo.png
+    :alt: Servo connectors
+    :width: 100%
+
+    RoverWing servo connectors
+
 RoverWing provides four servo connections. They can be used for any hobby servo
-which is controlled by standard PWM signal (500 us - 2500 us pulse duration) and
+which is controlled by standard PWM signal (500 μs - 2500 μs pulse duration) and
 5V power.
 
 .. note::
@@ -15,4 +21,4 @@ which is controlled by standard PWM signal (500 us - 2500 us pulse duration) and
    power-hungry than analog servos.
 
    If you need more power for your servos, we recommend using
-   `goBILDA Servo Power Node <https://www.gobilda.com/8-channel-servo-power-node/>`__. 
+   `goBILDA Servo Power Node <https://www.gobilda.com/8-channel-servo-power-node/>`__.
