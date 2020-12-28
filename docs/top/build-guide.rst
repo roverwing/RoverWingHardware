@@ -81,5 +81,20 @@ Assembly steps
 
    Tighten the standoff nuts.
 
+
+.. figure:: images/board-final.jpg
+  :alt: Board - fully assembled
+  :width: 60%
+
+  Final assembly of the board and top
+
+
 9. Double-check that the top board is correctly plugged into the headers.
-   Reconnect the battery
+   Reconnect the battery. If you haven't yet done so, remove the protective
+   plastic sheet from the display, by pulling on red (or blue) tab.
+
+
+
+To test the assembled board, run the :guilabel:`TopCover` example included
+with the RoverWing Library (make sure to edit it to define the pins connected
+to buttons -- this depends on the Feather board you use).
