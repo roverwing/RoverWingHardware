@@ -55,6 +55,7 @@ sensors from Sparkfun or Adafruit.
 
 Ordering
 --------
+
 RoverWing can be ordered from the following vendors:
   - CrowdSupply: https://www.crowdsupply.com/alexander-kirillov/roverwing 
   - Mouser: use part numbers `ROVERWING-01 <https://www.mouser.com/ProductDetail/ROVERWING-01>`__  for the RoverWing board and 
