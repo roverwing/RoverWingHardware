@@ -53,6 +53,13 @@ robotics competition, so it can be easily used with the same motors. The I2C
 port uses Qwiic/Stemma QT connector, making it easy to connect additional
 sensors from Sparkfun or Adafruit.
 
+Ordering
+--------
+RoverWing can be ordered from the following vendors:
+  - CrowdSupply: https://www.crowdsupply.com/alexander-kirillov/roverwing 
+  - Mouser: use part numbers `ROVERWING-01 <https://www.mouser.com/ProductDetail/ROVERWING-01>`__ ** for the RoverWing board and 
+    `ROVERWING-T-02 <https://www.mouser.com/ProductDetail/ROVERWING-T-02>`__ for the optional RoverWing top board,a s described below. 
+
 
 .. toctree::
     :caption: Table of Contents
