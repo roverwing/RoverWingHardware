@@ -10,9 +10,9 @@ designs are provided as STL and STEP  files in  directory `Extras` of our
 download them and print on your own 3d printer. You can attach RoverWing to the
 mounting plate using an M3 screw.
 
-.. figure:: images/plate-standard.png
+.. figure:: images/plate_standard.png
     :alt: Universal mounting plate
-    :width: 80%
+    :width: 50%
 
     Universal mounting plate for RoverWing
 
@@ -23,6 +23,6 @@ you are removing and putting on the RoverWing Top.
 
 .. figure:: images/switch_cover.png
     :alt: Switch cover
-    :width: 80%
+    :width: 50%
 
     Switch Cover
